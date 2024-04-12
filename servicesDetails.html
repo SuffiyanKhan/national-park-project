@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+    <style>
+        .bg-image{
+            width: 100%;
+            height: 40vh;
+            background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            
+        }
+        .overlay-text {
+            position: absolute; /* Position the text absolutely */
+            top: 10%; /* Align the top edge of the text to the vertical center */
+            left: 50%; /* Align the left edge of the text to the horizontal center */
+            transform: translate(-50%, -50%); /* Adjust the text position to center */
+            
+            font-family: 'Courier New', Courier, monospace;
+            color: white; /*Text color
+            /* font-size: 2rem; Adjust the font size */
+        }
+         
+    </style>
+</head>
+<body>
+
+    <section id="navbar"></section>
+    <section class="bg-image">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="overlay-text d-none d-xl-block">
+                        <p class="text-center  text-white fs-1 text-capitalize fw-bold ">our services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 py-5">
+            <div class="row g-4">
+              <div class="col-md-8">
+                <img src="./Assets/gallery/animal/service-details-img-1.png" alt="image" class="img-fluid">
+                <h4>Save Animals</h4>
+                <p>
+                  In addition to housing endangered animals—some extinct in the wild—and supporting conservation efforts around the world, viserlife Zoo helps create empathy and understanding for wildlife through programs like the UNLESS Contest, which has inspired tens of thousands of students over the past decade to learn about and create advocacy campaigns to make a lasting impact on an endangered species of their choosing. To date, the UNLESS Contest has resulted in hundreds of trees planted in Brazil, thousands of signatures in support of a wildlife bridge, and dollars raised to support our partners in the field.
+        
+                </p>
+                <div class="row g-4">
+                  <div class="col-xl-6">
+                    <p>
+                      Our highly trained staff are here to answer any questions you may have about the animals or conservation. Fill out the form to ask an expert, and a member of the viserlife Zoo team will get back to you!
+                    </p>
+                    <ul class="list list--base">
+                      <li>A brand new 26 foot tall LED holiday tree</li>
+                      <li>Animal Appearances</li>
+                      <li>Arts &amp; crafts (limited space available)</li>
+                      <li>Appearances by Santa until December 23</li>
+                      <li>Letters to Santa</li>
+                      <li>Adventure at Every Turn</li>
+                      <li>Become a Zoo Nature Blazer</li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-6">
+                    <img src="./Assets/gallery/animal/blog-post-3.png" alt="image" class="img-fluid">
+                  </div>
+                </div>
+                <h4>Common question about save anilams</h4>
+                <div class="accordion custom--accordion" id="faqAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                        Why Viserlife?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        A world where humans and animals coexist in harmony—that's our vision. By supporting the Zoo, you can help us bring it to life.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                        How to buy ticket in online?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Viserlife Zoo is open daily from 9:30 am-5 pm. All guests, including members, must make advance online reservations.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                        Upcoming Animals?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        Make your Viserlife Zoo visit memorable! From scavenger hunts and rope courses to carousel rides and animal experiences, we offer a number of attractions for visitors of all ages. Check below for details on what's currently open.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="ps-xl-4 ps-xxl-5">
+                  <ul class="list" style="--gap: 2rem">
+                    
+                    <li>
+                      <div class="widget">
+                        <h4 class="mt-0">Our Services</h4>
+                        <ul class="list list--base" style="--gap: 0.5rem">
+                          <li>
+                            <a class="t-link t-link--base text-clr text-capitalize">
+                              car parking
+                            </a>
+                          </li>
+                          <li>
+                            <a class="t-link t-link--base text-clr text-capitalize">
+                              Photo with animals
+                            </a>
+                          </li>
+                          <li>
+                            <a class="t-link t-link--base text-clr text-capitalize">
+                              Zoo Shopping
+                            </a>
+                          </li>
+                          <li>
+                            <a class="t-link t-link--base text-clr text-capitalize">
+                              a guided services
+                            </a>
+                          </li>
+                          <li>
+                            <a class="t-link t-link--base text-clr text-capitalize">
+                              Food &amp; beverage
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="t-link t-link--base text-clr text-capitalize">
+                              Save Animals
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#" class="t-link btn btn--xxl btn--base w-100 text-uppercase">
+                        download pdf
+                      </a>
+                    </li>
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-8.png" alt="image" class="img-fluid">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="footer"></section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>

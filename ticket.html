@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .bg-image{
+            width: 100%;
+            height: 60vh;
+            background-image: url(./Assets/gallery/animal/blog-post-5.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            
+        }
+        .overlay-text {
+            position: absolute; /* Position the text absolutely */
+            top: 50%; /* Align the top edge of the text to the vertical center */
+            left: 50%; /* Align the left edge of the text to the horizontal center */
+            transform: translate(-50%, -50%); /* Adjust the text position to center */
+            
+            font-family: 'Courier New', Courier, monospace;
+            color: white; /*Text color
+            /* font-size: 2rem; Adjust the font size */
+        }
+         
+    </style>
+</head>
+<body>
+    <section id="navbar"></section>
+    <section class="bg-image">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="overlay-text">
+                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">Event Ticket</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 pt-5">
+            <div class="row g-4">
+              <div class="col-lg-6">
+                <div class="pe-xl-4">
+                  <div class="zoo-box">
+                    <h4 class="mt-0">Buy Your zoo ticket</h4>
+                    <p class="section__para">
+                      Bring your lessons to life at viserlife Zoo! Spark your students’ curiosity and help them connect with the wonders of wildlife. A field trip to the Zoo is like no other
+                    </p>
+                    <form action="#" class="row g-4">
+                      <div class="col-12">
+                        <label class="form-label fw-bold t-heading-font heading-clr">
+                          Ages 14 &amp; Older
+                        </label>
+                        <div class="form--select">
+                          <select class="form-select form--select" aria-label="Default select example">
+                            <option selected="">Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <ul class="list list--base">
+                          <li>
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                              <span class="d-block">Adult (13 &amp; Over)</span>
+                              <span class="d-block">$45</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                              <span class="d-inline-block">Senior (60 &amp; over)</span>
+                              <span class="d-inline-block">$35</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                              <span class="d-inline-block">Child (3 - 10)</span>
+                              <span class="d-inline-block">$25</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                              <span class="d-inline-block">Child (2 &amp; under)</span>
+                              <span class="d-inline-block">$20</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-12">
+                        <a href="#" class="btn btn--md btn--base text-uppercase sm-text w-100">
+                          Buy Now
+                        </a>
+                        <span class="d-block sm-text mt-2 t-heading-font">
+                          <strong>Note:</strong> Donec interdum, metus et hendrerit
+                          aliquet, dolor diam sagittis ligula, eget egestas libero
+                          turpis vel mi. Nunc nulla. Fusce risus nisl viverra etempor
+                          eretium in sapien.
+                        </span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="ps-xl-4">
+                  <h4 class="mt-0">Asked question befor buy ticket</h4>
+                  <p class="section__para">
+                    Spark your students’ curiosity and help them connect with the wonders of wildlife. A field trip to the Zoo is like no other
+                  </p>
+                  <div class="accordion custom--accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                        Do chaperones and/or teachers receive free admission?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          For every 10 student tickets purchased, you will receive one complimentary ticket for a chaperone. Additional chaperone tickets should be purchased in advance of your trip and will be eligible for the group rate. Chaperones must be 21 years of age or older.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+                        How much is bus parking and where is it located?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Buses will be directed to park along 34th Street, south of the entrance to Tiger Lot. Buses park for free, and bus drivers are admitted to the Zoo for free with proper ID. Anyone traveling in their own vehicle will need to pay for parking in any of our open lots.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+                        Are we allowed to bring lunches?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          You are permitted to bring your own lunches and eat freely at any of our available picnic areas, no reservations required. Please note that we do not have storage for lunches. You may leave and re-enter the Zoo if you choose to store lunches on your bus.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+                        Are guided tours available?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          We are not currently offering guided group tours.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
+                          Are there any unavailable calendar dates?
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                          <div class="accordion-body">
+                            Please check our calendar for available dates. Please note our discounted school rate is available for grades K-12 during our weekday operating hours only.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="pt-5 upcoming">
+        <div class="section event-section mt-5">
+            <div class="container-fluid container-restricted">
+              <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                  <ul class="list list--row flex-wrap event-image-group justify-content-center">
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-1.png" alt="image" class="event-image">
+                    </li>
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-2.png" alt="image" class="event-image">
+                    </li>
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-3.png" alt="image" class="event-image">
+                    </li>
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-4.png" alt="image" class="event-image">
+                    </li>
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-5.png" alt="image" class="event-image">
+                    </li>
+                    <li>
+                      <img src="./Assets/gallery/animal/event-img-6.png" alt="image" class="event-image">
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <div class="event-section__content text-center text-lg-start">
+                    <div class="section__head">
+                        <span class="section__particles">
+                          <span class="section__subtitle text--white"> Upcoming </span>
+                        </span>
+                      <h2 class="section__title text--white">
+                          Our Upcoming Zoo  <span>Animals</span>
+                      </h2>
+                      <p class="section__para mx-auto ms-xl-0 text--white mb-0">
+                        Urban animals are party animals. Plan your next unforgettable event with the Zoo as your backdrop.
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section>
+        <div class="container mt-5 pt-5">
+            <div class="row g-4 justify-content-center">
+              <div class="col-12">
+                <h3 class="m-0">Upcoming Event</h3>
+              </div>
+              <div class="col-md-4">
+                <div class="blog-post">
+                  <img src="./Assets/gallery/animal/blog-post-1.png" alt="image" class="blog-post__img">
+                  <div class="blog-post__overlay">
+                    <div class="blog-post__date">
+                      <div class="blog-post__date-content">
+                        <h5 class="mt-0 mb-1 text-center text--white">10</h5>
+                        <h6 class="m-0 text-center text--white">MAY</h6>
+                      </div>
+                    </div>
+                    <div class="blog-post__content">
+                      <h5 class="blog-post__title">
+                        <a href="event-details.html" class="t-link blog-post__title-link">
+                          The chameleon is a species of chameleon found
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="blog-post">
+                  <img src="./Assets/gallery/animal/blog-post-2.png" alt="image" class="blog-post__img">
+                  <div class="blog-post__overlay">
+                    <div class="blog-post__date">
+                      <div class="blog-post__date-content">
+                        <h5 class="mt-0 mb-1 text-center text--white">10</h5>
+                        <h6 class="m-0 text-center text--white">MAY</h6>
+                      </div>
+                    </div>
+                    <div class="blog-post__content">
+                      <h5 class="blog-post__title">
+                        <a href="event-details.html" class="t-link blog-post__title-link">
+                          Special Issue of African Journal of Ecology
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="blog-post">
+                  <img src="./Assets/gallery/animal/blog-post-3.png" alt="image" class="blog-post__img">
+                  <div class="blog-post__overlay">
+                    <div class="blog-post__date">
+                      <div class="blog-post__date-content">
+                        <h5 class="mt-0 mb-1 text-center text--white">10</h5>
+                        <h6 class="m-0 text-center text--white">MAY</h6>
+                      </div>
+                    </div>
+                    <div class="blog-post__content">
+                      <h5 class="blog-post__title">
+                        <a href="event-details.html" class="t-link blog-post__title-link">
+                          Trade That is Rapidly Emptying Africa’s Forests
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="client-slider">
+        <div class="container mt-5 pt-5">
+            <div class="row g-4 g-sm-0 justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="client-card">
+                        <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="image" class="client-card__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <section id="footer"></section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>    
+</body>
+</html>

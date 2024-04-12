@@ -43,11 +43,45 @@ rel="stylesheet"
             font-family: 'Courier New', Courier, monospace;
             color: white;  
         }
-         
+        #loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Halka sa opaque white background */
+            z-index: 9999; /* Loader ko dusre elements ke upar rakhne ke liye */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Loader ki shape aur animation */
+        .loader-circle {
+            border: 8px solid #f3f3f3; /* Light grey color */
+            border-top: 8px solid #3498db; /* Blue color */
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite; /* Spin animation, 2 seconds */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
+    <script>
+      // JavaScript code to show the loader when the page starts loading
+      window.addEventListener("load", function() {
+          var loader = document.getElementById("loader");
+          loader.style.display = "none"; // Hide the loader when the page is fully loaded
+      });
+  </script>
 </head>
 <body>
-
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-circle"></div> <!-- Loader ka shape -->
+</div>
     <section id="navbar"></section>
     <section class="bg-image">
         <div class="container-fluid">

@@ -82,22 +82,22 @@ document.querySelector("#footer").innerHTML = `
                   <li>
                     <ul class="list list--row" style="--gap: .5rem;">
                       <li>
-                        <a href="#" class="t-link icon icon--circle icon--xs expert-card__icon">
-                          <i class="fab fa-facebook-f"></i>
+                        <a href="#" id="facebook" class="t-link icon icon--circle icon--xs expert-card__icon">
+                          <i class="fab fa-facebook-f" ></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="t-link icon icon--circle icon--xs expert-card__icon">
+                        <a href="#" id="twitter" class="t-link icon icon--circle icon--xs expert-card__icon">
                           <i class="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="t-link icon icon--circle icon--xs expert-card__icon">
+                        <a href="#" id="instagram" class="t-link icon icon--circle icon--xs expert-card__icon">
                           <i class="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#" class="t-link icon icon--circle icon--xs expert-card__icon">
+                        <a href="#" id="linkdine" class="t-link icon icon--circle icon--xs expert-card__icon">
                           <i class="fab fa-linkedin-in"></i>
                         </a>
                       </li>

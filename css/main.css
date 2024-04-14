@@ -6272,4 +6272,20 @@ textarea.form--control:focus {
         z-index: -1;
     }
 }
+#facebook:hover{
+    background-color: #3b5998 !important;
+    color: white;
+}
+#twitter:hover{
+    background-color: #55acee;
+    color: white;
+}
+#instagram:hover{
+    background-color: #ac2bac;
+    color: white;
+}
+#linkdine:hover{
+    background-color: #0082ca;
+    color: white;
+}
 /*# sourceMappingURL=main.css.map */

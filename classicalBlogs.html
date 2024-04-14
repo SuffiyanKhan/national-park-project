@@ -1,396 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
     ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- Font Awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
-rel="stylesheet"
-/>
-<link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
-    <style>
-        .bg-image{
-            width: 100%;
-            height: 40vh;
-            background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: cover;
-            
-        }
-        .overlay-text {
-            position: absolute; /* Position the text absolutely */
-            top: 50%; /* Align the top edge of the text to the vertical center */
-            left: 50%; /* Align the left edge of the text to the horizontal center */
-            transform: translate(-50%, -50%); /* Adjust the text position to center */
-            
-            font-family: 'Courier New', Courier, monospace;
-            color: white; /*Text color
-            /* font-size: 2rem; Adjust the font size */
-        }
-        #loader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Halka sa opaque white background */
-            z-index: 9999; /* Loader ko dusre elements ke upar rakhne ke liye */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* Loader ki shape aur animation */
-        .loader-circle {
-            border: 8px solid #f3f3f3; /* Light grey color */
-            border-top: 8px solid rgb(134 195 5); /* Blue color */
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            animation: spin 2s linear infinite; /* Spin animation, 2 seconds */
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-         
-    </style>
-    <script>
-      // JavaScript code to show the loader when the page starts loading
-      window.addEventListener("load", function() {
-          var loader = document.getElementById("loader");
-          loader.style.display = "none"; // Hide the loader when the page is fully loaded
-      });
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- Slick theme CSS (optional) -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <title>Document</title>
+  <style>
+    .bg-image {
+      width: 100%;
+      height: 40vh;
+      background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+    }
+
+    #loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      /* Halka sa opaque white background */
+      z-index: 9999;
+      /* Loader ko dusre elements ke upar rakhne ke liye */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader-circle {
+      border: 8px solid #f3f3f3;
+      /* Light grey color */
+      border-top: 8px solid rgb(134 195 5);
+      /* Blue color */
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: spin 2s linear infinite;
+      /* Spin animation, 2 seconds */
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script>
+    // JavaScript code to show the loader when the page starts loading
+    window.addEventListener("load", function () {
+      var loader = document.getElementById("loader");
+      loader.style.display = "none"; // Hide the loader when the page is fully loaded
+    });
   </script>
 </head>
+
 <body>
-<!-- Loader -->
-<div id="loader">
-  <div class="loader-circle"></div> <!-- Loader ka shape -->
-</div>
-    <section id="navbar"></section>
-    <section class="bg-image">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="overlay-text">
-                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">Classic blog post </p>
-                    </div>
-                </div>
-            </div>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-circle"></div> <!-- Loader ka shape -->
+  </div>
+  <section id="navbar"></section>
+  <section class="bg-image">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="overlay-text">
+            <p class="text-center text-white fs-1 text-capitalize fw-bold ">Classic blog post </p>
+          </div>
         </div>
-    </section>
-    <section>
-        <div class="container mt-5 py-5">
-            <div class="row g-4">
-              <div class="col-md-7 col-lg-8">
-                <ul class="list" style="--gap: 3rem">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-5 py-5">
+      <div class="row g-4">
+        <div class="col-md-7 col-lg-8">
+          <ul class="list" style="--gap: 3rem">
+            <li>
+              <div class="classic-blog">
+                <a class="t-link classic-blog__link">
+                  <img src="./Assets/gallery/animal/blog-post-4.png" alt="image" class="img-fluid">
+                </a>
+                <h4>
+                  <a class="t-link classic-blog__title text-capitalize">
+                    The chameleon is a species of chameleon found
+                  </a>
+                </h4>
+                <ul class="list list--row flex-wrap classic-blog__meta">
                   <li>
-                    <div class="classic-blog">
-                      <a class="t-link classic-blog__link">
-                        <img src="./Assets/gallery/animal/blog-post-4.png" alt="image" class="img-fluid">
-                      </a>
-                      <h4>
-                        <a class="t-link classic-blog__title text-capitalize">
-                          The chameleon is a species of chameleon found
-                        </a>
-                      </h4>
-                      <ul class="list list--row flex-wrap classic-blog__meta">
-                        <li>
-                          Post By:
-                          <a class="t-link classic-blog__meta-link">Tomas Wood</a>
-                        </li>
-                        <li>
-                          Post On:
-                          <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
-                        </li>
-                        <li>
-                          Tag:
-                          <a class="t-link classic-blog__meta-link">Birds</a>
-                        </li>
-                      </ul>
-                      <div class="classic-blog__body">
-                        <p>
-                          Called “Cattle of Kings,” Ankole are renowned for massive crescent or lyre-shaped horns measuring up to 8-feet wide that continue to grow as the animals age, eventually weighing up to 15 lbs. each. Gentle in nature and massive in size, Ankole can weigh between 1,200 and 1,600 lbs., making them an incredible sight to see.
-                        </p>
-                      </div>
-                    </div>
+                    Post By:
+                    <a class="t-link classic-blog__meta-link">Tomas Wood</a>
                   </li>
                   <li>
-                    <div class="classic-blog">
-                      <a class="t-link classic-blog__link">
-                        <img src="./Assets/gallery/animal/blog-post-5.png" alt="image" class="img-fluid">
-                      </a>
-                      <h4>
-                        <a class="t-link classic-blog__title text-capitalize">
-                          Trade That is Rapidly Emptying Africa’s Forests
-                        </a>
-                      </h4>
-                      <ul class="list list--row flex-wrap classic-blog__meta">
-                        <li>
-                          Post By:
-                          <a class="t-link classic-blog__meta-link">Tomas Wood</a>
-                        </li>
-                        <li>
-                          Post On:
-                          <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
-                        </li>
-                        <li>
-                          Tag:
-                          <a class="t-link classic-blog__meta-link">Birds</a>
-                        </li>
-                      </ul>
-                      <div class="classic-blog__body">
-                        <p>
-                          Animals are on the move like never before at viserlife Zoo with Zoo360, a first-in-the-world system of see-through trails passing through treetops, crossing over pathways and connecting habitats, giving animals like amazing big cats, majestic primates and marvelous meerkats the opportunities to travel and explore. Visit western lowland gorillas, giraffes, hippos, white rhino, zebras, red pandas, Amur tigers and more at America’s first Zoo.
-                        </p>
-                      </div>
-                    </div>
+                    Post On:
+                    <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
                   </li>
                   <li>
-                    <div class="classic-blog">
-                      <a class="t-link classic-blog__link">
-                        <img src="./Assets/gallery/animal/blog-post-6.png" alt="image" class="img-fluid">
-                      </a>
-                      <h4>
-                        <a class="t-link classic-blog__title text-capitalize">
-                          A special issue of the African Journal of Ecology
-                        </a>
-                      </h4>
-                      <ul class="list list--row flex-wrap classic-blog__meta">
-                        <li>
-                          Post By:
-                          <a class="t-link classic-blog__meta-link">Tomas Wood</a>
-                        </li>
-                        <li>
-                          Post On:
-                          <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
-                        </li>
-                        <li>
-                          Tag:
-                          <a class="t-link classic-blog__meta-link">Birds</a>
-                        </li>
-                      </ul>
-                      <div class="classic-blog__body">
-                        <p>
-                          Explore a 42-acre Victorian garden and enjoy award-winning exhibits. viserlife Zoo is one of the region’s foremost conservation organizations and home to nearly 1,700 animals, many rare and endangered. By connecting people with wildlife, viserlife Zoo creates joyful discovery and inspires action for animals and habitats. The Zoo welcomed more than 1.25 million visitors last year. 
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="classic-blog">
-                      <a class="t-link classic-blog__link">
-                        <img src="./Assets/gallery/animal/blog-post-7.png" alt="image" class="img-fluid">
-                      </a>
-                      <h4>
-                        <a class="t-link classic-blog__title text-capitalize">
-                          Dedicated to the wild meat trade that is rapidly
-                        </a>
-                      </h4>
-                      <ul class="list list--row flex-wrap classic-blog__meta">
-                        <li>
-                          Post By:
-                          <a class="t-link classic-blog__meta-link">Tomas Wood</a>
-                        </li>
-                        <li>
-                          Post On:
-                          <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
-                        </li>
-                        <li>
-                          Tag:
-                          <a class="t-link classic-blog__meta-link">Birds</a>
-                        </li>
-                      </ul>
-                      <div class="classic-blog__body">
-                        <p>
-                          Named for its lush reddish-gold mane, the GLT has faced a number of threats in the wild, most notably massive deforestation for agriculture and development, reducing habitat to about 2% of its original range. This threat took GLTs to the brink of extinction by the early 1970s, with scientists estimating there were fewer than 200 left in the wild.
-                        </p>
-                      </div>
-                    </div>
+                    Tag:
+                    <a class="t-link classic-blog__meta-link">Birds</a>
                   </li>
                 </ul>
+                <div class="classic-blog__body">
+                  <p>
+                    Called “Cattle of Kings,” Ankole are renowned for massive crescent or lyre-shaped horns measuring up
+                    to 8-feet wide that continue to grow as the animals age, eventually weighing up to 15 lbs. each.
+                    Gentle in nature and massive in size, Ankole can weigh between 1,200 and 1,600 lbs., making them an
+                    incredible sight to see.
+                  </p>
+                </div>
               </div>
-              <div class="col-md-5 col-lg-4">
-                <div class="ps-xl-4 ps-xxl-5">
-                  <ul class="list" style="--gap: 2rem">
-                    
+            </li>
+            <li>
+              <div class="classic-blog">
+                <a class="t-link classic-blog__link">
+                  <img src="./Assets/gallery/animal/blog-post-5.png" alt="image" class="img-fluid">
+                </a>
+                <h4>
+                  <a class="t-link classic-blog__title text-capitalize">
+                    Trade That is Rapidly Emptying Africa’s Forests
+                  </a>
+                </h4>
+                <ul class="list list--row flex-wrap classic-blog__meta">
+                  <li>
+                    Post By:
+                    <a class="t-link classic-blog__meta-link">Tomas Wood</a>
+                  </li>
+                  <li>
+                    Post On:
+                    <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
+                  </li>
+                  <li>
+                    Tag:
+                    <a class="t-link classic-blog__meta-link">Birds</a>
+                  </li>
+                </ul>
+                <div class="classic-blog__body">
+                  <p>
+                    Animals are on the move like never before at viserlife Zoo with Zoo360, a first-in-the-world system
+                    of see-through trails passing through treetops, crossing over pathways and connecting habitats,
+                    giving animals like amazing big cats, majestic primates and marvelous meerkats the opportunities to
+                    travel and explore. Visit western lowland gorillas, giraffes, hippos, white rhino, zebras, red
+                    pandas, Amur tigers and more at America’s first Zoo.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="classic-blog">
+                <a class="t-link classic-blog__link">
+                  <img src="./Assets/gallery/animal/blog-post-6.png" alt="image" class="img-fluid">
+                </a>
+                <h4>
+                  <a class="t-link classic-blog__title text-capitalize">
+                    A special issue of the African Journal of Ecology
+                  </a>
+                </h4>
+                <ul class="list list--row flex-wrap classic-blog__meta">
+                  <li>
+                    Post By:
+                    <a class="t-link classic-blog__meta-link">Tomas Wood</a>
+                  </li>
+                  <li>
+                    Post On:
+                    <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
+                  </li>
+                  <li>
+                    Tag:
+                    <a class="t-link classic-blog__meta-link">Birds</a>
+                  </li>
+                </ul>
+                <div class="classic-blog__body">
+                  <p>
+                    Explore a 42-acre Victorian garden and enjoy award-winning exhibits. viserlife Zoo is one of the
+                    region’s foremost conservation organizations and home to nearly 1,700 animals, many rare and
+                    endangered. By connecting people with wildlife, viserlife Zoo creates joyful discovery and inspires
+                    action for animals and habitats. The Zoo welcomed more than 1.25 million visitors last year.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="classic-blog">
+                <a class="t-link classic-blog__link">
+                  <img src="./Assets/gallery/animal/blog-post-7.png" alt="image" class="img-fluid">
+                </a>
+                <h4>
+                  <a class="t-link classic-blog__title text-capitalize">
+                    Dedicated to the wild meat trade that is rapidly
+                  </a>
+                </h4>
+                <ul class="list list--row flex-wrap classic-blog__meta">
+                  <li>
+                    Post By:
+                    <a class="t-link classic-blog__meta-link">Tomas Wood</a>
+                  </li>
+                  <li>
+                    Post On:
+                    <a class="t-link classic-blog__meta-link">22 Jan 2022</a>
+                  </li>
+                  <li>
+                    Tag:
+                    <a class="t-link classic-blog__meta-link">Birds</a>
+                  </li>
+                </ul>
+                <div class="classic-blog__body">
+                  <p>
+                    Named for its lush reddish-gold mane, the GLT has faced a number of threats in the wild, most
+                    notably massive deforestation for agriculture and development, reducing habitat to about 2% of its
+                    original range. This threat took GLTs to the brink of extinction by the early 1970s, with scientists
+                    estimating there were fewer than 200 left in the wild.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="ps-xl-4 ps-xxl-5">
+            <ul class="list" style="--gap: 2rem">
+
+              <li>
+                <div class="widget">
+                  <h5 class="mt-0">News Categories</h5>
+                  <ul class="list list--base" style="--gap: 0.5rem">
                     <li>
-                      <div class="widget">
-                        <h5 class="mt-0">News Categories</h5>
-                        <ul class="list list--base" style="--gap: 0.5rem">
-                          <li>
-                            <a class="t-link t-link--base text-clr text-capitalize">
-                              car parking
-                            </a>
-                          </li>
-                          <li>
-                            <a class="t-link t-link--base text-clr text-capitalize">
-                              Photo with animals
-                            </a>
-                          </li>
-                          <li>
-                            <a class="t-link t-link--base text-clr text-capitalize">
-                              Zoo Shopping
-                            </a>
-                          </li>
-                          <li>
-                            <a class="t-link t-link--base text-clr text-capitalize">
-                              a guided services
-                            </a>
-                          </li>
-                          <li>
-                            <a class="t-link t-link--base text-clr text-capitalize">
-                              Food &amp; beverage
-                            </a>
-                          </li>
-                          <li>
-                            <a class="t-link t-link--base text-clr text-capitalize">
-                              Save Animals
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="./Karachi Safari Park.pdf" download class="t-link btn btn--xxl btn--base w-100 text-uppercase">
-                        download pdf
+                      <a class="t-link t-link--base text-clr text-capitalize">
+                        car parking
                       </a>
                     </li>
                     <li>
-                      <div class="widget">
-                        <h5 class="widget__title">Popular News</h5>
-                        <ul class="list" style="--gap: 1rem">
-                          <li>
-                            <div class="list list--row">
-                              <div class="user user--md">
-                                <img src="./Assets/gallery/feedback images/people-3.jpg" alt="image" class="user__img">
-                              </div>
-                              <div class="list flex-grow-1" style="--gap: 0.2rem">
-                                <h6 class="m-0">
-                                  <a class="t-link heading-clr t-link--base">
-                                    Member Morning Strolls
-                                  </a>
-                                </h6>
-                                <ul class="list list--row" style="--gap: 1rem">
-                                  <li>
-                                    <a  class="t-link t-link--base text-clr sm-text">
-                                      28 May 2021
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a  class="t-link t-link--base text-clr sm-text">
-                                      Viserlife
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list list--row">
-                              <div class="user user--md">
-                                <img src="./Assets/gallery/feedback images/people-4.jpg" alt="image" class="user__img">
-                              </div>
-                              <div class="list flex-grow-1" style="--gap: 0.2rem">
-                                <h6 class="m-0">
-                                  <a class="t-link heading-clr t-link--base">
-                                    Member Evenings
-                                  </a>
-                                </h6>
-                                <ul class="list list--row" style="--gap: 1rem">
-                                  <li>
-                                    <a class="t-link t-link--base text-clr sm-text">
-                                      28 May 2021
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a class="t-link t-link--base text-clr sm-text">
-                                      Viserlife
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list list--row">
-                              <div class="user user--md">
-                                <img src="./Assets/gallery/feedback images/people-5.jpg" alt="image" class="user__img">
-                              </div>
-                              <div class="list flex-grow-1" style="--gap: 0.2rem">
-                                <h6 class="m-0">
-                                  <a   class="t-link heading-clr t-link--base">
-                                    Calling all early birds
-                                  </a>
-                                </h6>
-                                <ul class="list list--row" style="--gap: 1rem">
-                                  <li>
-                                    <a  class="t-link t-link--base text-clr sm-text">
-                                      28 May 2021
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a  class="t-link t-link--base text-clr sm-text">
-                                      Viserlife
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+                      <a class="t-link t-link--base text-clr text-capitalize">
+                        Photo with animals
+                      </a>
+                    </li>
+                    <li>
+                      <a class="t-link t-link--base text-clr text-capitalize">
+                        Zoo Shopping
+                      </a>
+                    </li>
+                    <li>
+                      <a class="t-link t-link--base text-clr text-capitalize">
+                        a guided services
+                      </a>
+                    </li>
+                    <li>
+                      <a class="t-link t-link--base text-clr text-capitalize">
+                        Food &amp; beverage
+                      </a>
+                    </li>
+                    <li>
+                      <a class="t-link t-link--base text-clr text-capitalize">
+                        Save Animals
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./Karachi Safari Park.pdf" download class="t-link btn btn--xxl btn--base w-100 text-uppercase">
+                  download pdf
+                </a>
+              </li>
+              <li>
+                <div class="widget">
+                  <h5 class="widget__title">Popular News</h5>
+                  <ul class="list" style="--gap: 1rem">
+                    <li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-3.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a class="t-link heading-clr t-link--base">
+                              Member Morning Strolls
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
-                     
                     <li>
-                      <div class="member-card">
-                        <img src="./Assets/gallery/animal/member-card-1.png" alt="image" class="member-card__img">
-                        <div class="member-card__content align-items-start">
-                          <h5 class="membership-card__title mb-2 text--white">
-                            Premium
-                          </h5>
-                          <h4 class="membership-card__price mt-2">$108.59</h4>
-                          <ul class="list list--base" style="--gap: 0.5rem">
-                            <li class="text--white">20% Dsicount All Event</li>
-                            <li class="text--white">Allow 2 adult person</li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-4.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a class="t-link heading-clr t-link--base">
+                              Member Evenings
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
                           </ul>
-                          <a href="#" class="btn btn--md btn--base mt-4">Buy Ticket</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-5.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a class="t-link heading-clr t-link--base">
+                              Calling all early birds
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </li>
+
+              <li>
+                <div class="member-card">
+                  <img src="./Assets/gallery/animal/member-card-1.png" alt="image" class="member-card__img">
+                  <div class="member-card__content align-items-start">
+                    <h5 class="membership-card__title mb-2 text--white">
+                      Premium
+                    </h5>
+                    <h4 class="membership-card__price mt-2">$108.59</h4>
+                    <ul class="list list--base" style="--gap: 0.5rem">
+                      <li class="text--white">20% Dsicount All Event</li>
+                      <li class="text--white">Allow 2 adult person</li>
+                    </ul>
+                    <a href="#" class="btn btn--md btn--base mt-4">Buy Ticket</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-    </section>
-    
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container  ">
+      <div class="row">
+        <div class="col-12">
+          <div class="slider d-flex justify-content-evenly">
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3"></div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
-    <section id="footer"></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+
+
+
+  <section id="footer"></section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/footer.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/footer.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Slick JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+        responsive: [
+          {
+            breakpoint: 1600, // Extra Large screen
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              speed: 3000,
+              cssEase: 'linear'
+            }
+          },
+          {
+            breakpoint: 985, // Large screen
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              speed: 3000,
+              cssEase: 'linear'
+            }
+          },
+          {
+            breakpoint: 766, // Medium screen
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480, // Small screen
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+
+  </script>
 </body>
+
 </html>

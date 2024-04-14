@@ -1,370 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
     ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- Font Awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
-rel="stylesheet"
-/>
-<link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
-    <style>
-        .bg-image{
-            width: 100%;
-            height: 40vh;
-            background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: cover;
-            
-        }
-        .overlay-text {
-            position: absolute; /* Position the text absolutely */
-            top: 50%; /* Align the top edge of the text to the vertical center */
-            left: 50%; /* Align the left edge of the text to the horizontal center */
-            transform: translate(-50%, -50%); /* Adjust the text position to center */
-            
-            font-family: 'Courier New', Courier, monospace;
-            color: white; /*Text color
-            /* font-size: 2rem; Adjust the font size */
-        }
-        .carousel-inner {
-    height: 500px; /* Set a fixed height for the carousel */
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- Slick theme CSS (optional) -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <title>Document</title>
+  <style>
+    .bg-image {
+      width: 100%;
+      height: 40vh;
+      background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
 
-.carousel-image {
-    object-fit: cover; /* Maintain aspect ratio */
-    height: 100%; /* Ensure the image fills the height of the carousel */
-}
+    }
 
-         .previousIcon{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 4px solid;
-            transition: all ease-in-out 3s;
-            
-         }
-         .previousIcon:hover{
-            background-color: rgb(134 195 5);
-            color: white;
-         }
-         #loader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Halka sa opaque white background */
-            z-index: 9999; /* Loader ko dusre elements ke upar rakhne ke liye */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* Loader ki shape aur animation */
-        .loader-circle {
-            border: 8px solid #f3f3f3; /* Light grey color */
-            border-top: 8px solid rgb(134 195 5); /* Blue color */
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            animation: spin 2s linear infinite; /* Spin animation, 2 seconds */
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-    <script>
-      // JavaScript code to show the loader when the page starts loading
-      window.addEventListener("load", function() {
-          var loader = document.getElementById("loader");
-          loader.style.display = "none"; // Hide the loader when the page is fully loaded
-      });
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+    }
+
+    .carousel-inner {
+      height: 500px;
+    }
+
+    .carousel-image {
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .previousIcon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 4px solid;
+      transition: all ease-in-out 3s;
+
+    }
+
+    .previousIcon:hover {
+      background-color: rgb(134 195 5);
+      color: white;
+    }
+
+    #loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader-circle {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid rgb(134 195 5);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script>
+    // JavaScript code to show the loader when the page starts loading
+    window.addEventListener("load", function () {
+      var loader = document.getElementById("loader");
+      loader.style.display = "none"; // Hide the loader when the page is fully loaded
+    });
   </script>
 </head>
+
 <body>
-<!-- Loader -->
-<div id="loader">
-  <div class="loader-circle"></div> <!-- Loader ka shape -->
-</div>
-    <section id="navbar"></section>
-    <section class="bg-image">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="overlay-text">
-                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">animals details</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-circle"></div> <!-- Loader ka shape -->
+  </div>
+  <section id="navbar"></section>
+  <section class="bg-image">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="overlay-text">
+            <p class="text-center text-white fs-1 text-capitalize fw-bold ">animals details</p>
+          </div>
         </div>
-    </section>
-    <section class="mt-5 py-5">
-        <div class="container mt-5">
-            <div class="row">
-              <div class="col-12">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./Assets/gallery/slider/animal-details-img.png" class="d-block w-100 carousel-image" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Assets/gallery/slider/footer-bg.png" class="d-block w-100 carousel-image" style="object-fit: cover;" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./Assets/gallery/slider/slider-1.jpg" class="d-block w-100 carousel-image" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon previousIcon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                        <span class="carousel-control-next-icon previousIcon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                
-                 
-                 
+      </div>
+    </div>
+  </section>
+  <section class="mt-5 py-5">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Assets/gallery/slider/animal-details-img.png" class="d-block w-100 carousel-image"
+                  alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/gallery/slider/footer-bg.png" class="d-block w-100 carousel-image"
+                  style="object-fit: cover;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/gallery/slider/slider-1.jpg" class="d-block w-100 carousel-image" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon previousIcon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon previousIcon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+        </div>
+      </div>
+  </section>
+  <section>
+    <div class="container mt-5">
+      <div class="row g-4">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mt-0">African Lion</h4>
+          <p>
+            Two distinctive features set lions apart from all other wild cats. First, they are social felines while
+            other cats are typically solitary in the wild. Second, they are the only cats to exhibit a physical
+            distinction between males and females— males have a mane.
+          </p>
+          <h4>Family Matters</h4>
+          <p>
+            Lions live in prides of between four to 37 cats. Prides usually consist of a core four to 12 related adult
+            females, their offspring and one to six adult males. In the pride, females do most of the hunting, when they
+            work together to form an ambush.
+          </p>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <ul class="list list--base">
+                <li>lives in a group, or pride</li>
+                <li>Female lions do most of the hunting</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="list list--base">
+                <li>lives in a group, or pride</li>
+                <li>Female lions do most of the hunting</li>
+              </ul>
             </div>
           </div>
-    </section>
-    <section>
-        <div class="container mt-5">
-            <div class="row g-4">
-              <div class="col-md-7 col-lg-8">
-                <h4 class="mt-0">African Lion</h4>
-                <p>
-                  Two distinctive features set lions apart from all other wild cats. First, they are social felines while other cats are typically solitary in the wild. Second, they are the only cats to exhibit a physical distinction between males and females— males have a mane.
-                </p>
-                <h4>Family Matters</h4>
-                <p>
-                  Lions live in prides of between four to 37 cats. Prides usually consist of a core four to 12 related adult females, their offspring and one to six adult males. In the pride, females do most of the hunting, when they work together to form an ambush.
-                </p>
-                <div class="row g-4">
-                  <div class="col-md-6">
-                    <ul class="list list--base">
-                      <li>lives in a group, or pride</li>
-                      <li>Female lions do most of the hunting</li>
+          <h4>Physical Characteristics</h4>
+          <p>
+            In Africa, the preferred prey of the lion is wildebeest, impala, zebras, buffalo and warthogs. At the Zoo,
+            their diet includes a commercial raw meat mix, solid beef, beef shank bones and beef long bones. These bones
+            provide enrichment for the lions and helps them strengthen their jaws.
+          </p>
+          <h4>Habitat/Diet</h4>
+          <p>
+            You may remember when this subspecies was once called "Siberian tigers" years ago. In 1984, the name was
+            changed to better reflect where they live in the wild since their geographic range has been drastically
+            reduced. Amur tigers are found in far eastern Russia, with a few surviving in northeastern China and
+            possibly North Korea. This type of tiger is now named for the Amur River, which forms the border between far
+            eastern Russia and northeastern China.
+          </p>
+          <h4>Social Behavior</h4>
+          <p>
+            Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten
+            people about conservation issues and save wildlife across the globe. The tigers’ famous stripes help them to
+            camouflage themselves from their prey while hunting. No two tigers have the same stripe pattern. Just as
+            humans can be identified through their own unique fingerprints, tigers can be identified by their individual
+            stripe patterns.
+          </p>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="ps-xxl-5">
+            <ul class="list" style="--gap: 1.5rem">
+              <li>
+                <div class="member-card">
+                  <img src="./Assets/gallery/animal/member-card-1.png" alt="image" class="member-card__img">
+                  <div class="member-card__content align-items-start">
+                    <h5 class="membership-card__title mb-2 text--white">Premium</h5>
+                    <h4 class="membership-card__price mt-2">$108.59</h4>
+                    <ul class="list list--base" style="--gap: .5rem;">
+                      <li class="text--white">20% Dsicount All Event</li>
+                      <li class="text--white">Allow 2 adult person</li>
                     </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <ul class="list list--base">
-                      <li>lives in a group, or pride</li>
-                      <li>Female lions do most of the hunting</li>
-                    </ul>
+                    <a href="#" class="btn btn--md btn--base mt-4">Buy Ticket</a>
                   </div>
                 </div>
-                <h4>Physical Characteristics</h4>
-                <p>
-                  In Africa, the preferred prey of the lion is wildebeest, impala, zebras, buffalo and warthogs. At the Zoo, their diet includes a commercial raw meat mix, solid beef, beef shank bones and beef long bones. These bones provide enrichment for the lions and helps them strengthen their jaws.
-                </p>
-                <h4>Habitat/Diet</h4>
-                <p>
-                  You may remember when this subspecies was once called "Siberian tigers" years ago. In 1984, the name was changed to better reflect where they live in the wild since their geographic range has been drastically reduced. Amur tigers are found in far eastern Russia, with a few surviving in northeastern China and possibly North Korea. This type of tiger is now named for the Amur River, which forms the border between far eastern Russia and northeastern China.
-                </p>
-                <h4>Social Behavior</h4>
-                <p>
-                  Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten people about conservation issues and save wildlife across the globe. The tigers’ famous stripes help them to camouflage themselves from their prey while hunting. No two tigers have the same stripe pattern. Just as humans can be identified through their own unique fingerprints, tigers can be identified by their individual stripe patterns.
-                </p>
-              </div>
-              <div class="col-md-5 col-lg-4">
-                <div class="ps-xxl-5">
-                  <ul class="list" style="--gap: 1.5rem">
+              </li>
+              <li>
+                <div class="widget">
+                  <h5 class="widget__title">Upcoming Event</h5>
+                  <ul class="list" style="--gap: 1rem">
                     <li>
-                      <div class="member-card">
-                        <img src="./Assets/gallery/animal/member-card-1.png" alt="image" class="member-card__img">
-                        <div class="member-card__content align-items-start">
-                          <h5 class="membership-card__title mb-2 text--white">Premium</h5>
-                          <h4 class="membership-card__price mt-2">$108.59</h4>
-                          <ul class="list list--base" style="--gap: .5rem;">
-                            <li class="text--white">20% Dsicount All Event</li>
-                            <li class="text--white">Allow 2 adult person</li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-3.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a href="blog-details.html" class="t-link heading-clr t-link--base">
+                              Member Morning Strolls
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a href="#" class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
                           </ul>
-                          <a href="#" class="btn btn--md btn--base mt-4">Buy Ticket</a>
                         </div>
                       </div>
                     </li>
                     <li>
-                      <div class="widget">
-                        <h5 class="widget__title">Upcoming Event</h5>
-                        <ul class="list" style="--gap: 1rem">
-                          <li>
-                            <div class="list list--row">
-                              <div class="user user--md">
-                                <img src="./Assets/gallery/feedback images/people-3.jpg" alt="image" class="user__img">
-                              </div>
-                              <div class="list flex-grow-1" style="--gap: 0.2rem">
-                                <h6 class="m-0">
-                                  <a href="blog-details.html" class="t-link heading-clr t-link--base">
-                                    Member Morning Strolls
-                                  </a>
-                                </h6>
-                                <ul class="list list--row" style="--gap: 1rem">
-                                  <li>
-                                    <a href="#" class="t-link t-link--base text-clr sm-text">
-                                      28 May 2021
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="t-link t-link--base text-clr sm-text">
-                                      Viserlife
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list list--row">
-                              <div class="user user--md">
-                                <img src="./Assets/gallery/feedback images/people-4.jpg" alt="image" class="user__img">
-                              </div>
-                              <div class="list flex-grow-1" style="--gap: 0.2rem">
-                                <h6 class="m-0">
-                                  <a href="blog-details.html" class="t-link heading-clr t-link--base">
-                                    Member Evenings
-                                  </a>
-                                </h6>
-                                <ul class="list list--row" style="--gap: 1rem">
-                                  <li>
-                                    <a href="#" class="t-link t-link--base text-clr sm-text">
-                                      28 May 2021
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="t-link t-link--base text-clr sm-text">
-                                      Viserlife
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list list--row">
-                              <div class="user user--md">
-                                <img src="./Assets/gallery/feedback images/people-5.jpg" alt="image" class="user__img">
-                              </div>
-                              <div class="list flex-grow-1" style="--gap: 0.2rem">
-                                <h6 class="m-0">
-                                  <a href="blog-details.html" class="t-link heading-clr t-link--base">
-                                    Calling all early birds
-                                  </a>
-                                </h6>
-                                <ul class="list list--row" style="--gap: 1rem">
-                                  <li>
-                                    <a href="#" class="t-link t-link--base text-clr sm-text">
-                                      28 May 2021
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="#" class="t-link t-link--base text-clr sm-text">
-                                      Viserlife
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-4.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a href="blog-details.html" class="t-link heading-clr t-link--base">
+                              Member Evenings
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a href="#" class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-5.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a href="blog-details.html" class="t-link heading-clr t-link--base">
+                              Calling all early birds
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a href="#" class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                   </ul>
                 </div>
-              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container mt-5  ">
+      <div class="row g-4">
+        <div class="col-12">
+          <h4 class="m-0">Other Animals</h4>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="animal-card">
+            <img src="./Assets/gallery/animal/img-1.png" alt="image" class="animal-card__img">
+            <div class="animal-card__body">
+              <h5 class="mt-0 mb-2 text-center">
+                <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
+                  Lion
+                </a>
+              </h5>
+              <span class="d-block sm-text text-center"> African Plains </span>
             </div>
           </div>
-    </section>
-    <section class="">
-        <div class="container mt-5  ">
-            <div class="row g-4">
-              <div class="col-12">
-                <h4 class="m-0">Other Animals</h4>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="animal-card">
-                  <img src="./Assets/gallery/animal/img-1.png" alt="image" class="animal-card__img">
-                  <div class="animal-card__body">
-                    <h5 class="mt-0 mb-2 text-center">
-                      <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
-                        Lion
-                      </a>
-                    </h5>
-                    <span class="d-block sm-text text-center"> African Plains </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="animal-card">
-                  <img src="./Assets/gallery/animal/img-2.png" alt="image" class="animal-card__img">
-                  <div class="animal-card__body">
-                    <h5 class="mt-0 mb-2 text-center">
-                      <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
-                        Green Frog
-                      </a>
-                    </h5>
-                    <span class="d-block sm-text text-center"> World of Reptiles </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="animal-card">
-                  <img src="./Assets/gallery/animal/img-3.png" alt="image" class="animal-card__img">
-                  <div class="animal-card__body">
-                    <h5 class="mt-0 mb-2 text-center">
-                      <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
-                        Tiger
-                      </a>
-                    </h5>
-                    <span class="d-block sm-text text-center"> Tiger Mountain </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3">
-                <div class="animal-card">
-                  <img src="./Assets/gallery/animal/img-4.png" alt="image" class="animal-card__img">
-                  <div class="animal-card__body">
-                    <h5 class="mt-0 mb-2 text-center">
-                      <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
-                        Hippos
-                      </a>
-                    </h5>
-                    <span class="d-block sm-text text-center"> Zoo Center </span>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="animal-card">
+            <img src="./Assets/gallery/animal/img-2.png" alt="image" class="animal-card__img">
+            <div class="animal-card__body">
+              <h5 class="mt-0 mb-2 text-center">
+                <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
+                  Green Frog
+                </a>
+              </h5>
+              <span class="d-block sm-text text-center"> World of Reptiles </span>
             </div>
           </div>
-    </section>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="animal-card">
+            <img src="./Assets/gallery/animal/img-3.png" alt="image" class="animal-card__img">
+            <div class="animal-card__body">
+              <h5 class="mt-0 mb-2 text-center">
+                <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
+                  Tiger
+                </a>
+              </h5>
+              <span class="d-block sm-text text-center"> Tiger Mountain </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="animal-card">
+            <img src="./Assets/gallery/animal/img-4.png" alt="image" class="animal-card__img">
+            <div class="animal-card__body">
+              <h5 class="mt-0 mb-2 text-center">
+                <a href="animal-details.html" class="t-link t-link--base heading-clr d-inline-block">
+                  Hippos
+                </a>
+              </h5>
+              <span class="d-block sm-text text-center"> Zoo Center </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-12">
+          <div class="slider d-flex justify-content-evenly">
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
 
-    <section id="footer"></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  <section id="footer"></section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/footer.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/footer.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Slick JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+        responsive: [
+          {
+            breakpoint: 1600, // Extra Large screen
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              speed: 3000,
+              cssEase: 'linear'
+            }
+          },
+          {
+            breakpoint: 985, // Large screen
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              speed: 3000,
+              cssEase: 'linear'
+            }
+          },
+          {
+            breakpoint: 766, // Medium screen
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480, // Small screen
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+
+  </script>
 </body>
+
 </html>

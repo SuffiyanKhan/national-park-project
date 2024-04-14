@@ -1,201 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
     ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- Font Awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
-rel="stylesheet"
-/>
-<link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
-    <style>
-        .bg-image{
-            width: 100%;
-            height: 40vh;
-            background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: cover;
-            
-        }
-        .overlay-text {
-            position: absolute;  
-            top: 50%;  
-            left: 50%;  
-            transform: translate(-50%, -50%);  
-            font-family: 'Courier New', Courier, monospace;
-            color: white;  
-        }
-        #loader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Halka sa opaque white background */
-            z-index: 9999; /* Loader ko dusre elements ke upar rakhne ke liye */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* Loader ki shape aur animation */
-        .loader-circle {
-            border: 8px solid #f3f3f3; /* Light grey color */
-            border-top: 8px solid rgb(134 195 5); /* Blue color */
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            animation: spin 2s linear infinite; /* Spin animation, 2 seconds */
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-    <script>
-      // JavaScript code to show the loader when the page starts loading
-      window.addEventListener("load", function() {
-          var loader = document.getElementById("loader");
-          loader.style.display = "none"; // Hide the loader when the page is fully loaded
-      });
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <!-- Slick theme CSS (optional) -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <title>Document</title>
+  <style>
+    .bg-image {
+      width: 100%;
+      height: 40vh;
+      background-image: url(./Assets/gallery/karolina-zelasko-6BdRt91mlTw-unsplash.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+    }
+
+    #loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+       z-index: 9999;
+       display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+     .loader-circle {
+      border: 8px solid #f3f3f3;
+       border-top: 8px solid rgb(134 195 5);
+       border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: spin 2s linear infinite;
+     }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script>
+    // JavaScript code to show the loader when the page starts loading
+    window.addEventListener("load", function () {
+      var loader = document.getElementById("loader");
+      loader.style.display = "none"; // Hide the loader when the page is fully loaded
+    });
   </script>
 </head>
+
 <body>
-<!-- Loader -->
-<div id="loader">
-  <div class="loader-circle"></div> <!-- Loader ka shape -->
-</div>
-    <section id="navbar"></section>
-    <section class="bg-image">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="overlay-text">
-                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">privacy & policy</p>
-                    </div>
-                </div>
-            </div>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-circle"></div> <!-- Loader ka shape -->
+  </div>
+  <section id="navbar"></section>
+  <section class="bg-image">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="overlay-text">
+            <p class="text-center text-white fs-1 text-capitalize fw-bold ">privacy & policy</p>
+          </div>
         </div>
-    </section>
-    <section>
-        <div class="container mt-5 py-5">
-            <div class="row g-4">
-              <div class="col-md-8">
-                <ul class="list" style="--gap: 2rem">
-                  <li>
-                    <div class="zoo-box">
-                      <h5 class="mt-0">General Privacy &amp; Policy?</h5>
-                      <p class="mb-0">
-                        As a donor submitting personally identifying information to The
-                        Zoological Society of Viserlife (Viserlife Zoo”) or any Zoo
-                        staff through electronic, written, or oral communications,
-                        contributions, event registrations, and donor society
-                        memberships, e.g. Friends of Viserlife Zoo and 1859 Society, you
-                        consent to the terms and conditions of the Donor Privacy Policy
-                        and to the Zoo’s processing and use of personal information for
-                        the purposes stated below.
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="zoo-box">
-                      <h5 class="mt-0">How We Collect Data</h5>
-                      <p>
-                        Viserlife Zoo respects our donors’ choices and control over
-                        their information. All donors have the right to review
-                        information that Viserlife Zoo has collected and stored. To
-                        review that information, please contact the Zoo in writing. All
-                        donors also have the right to give anonymously, and, when
-                        Viserlife Zoo is notified of this intention, donors will not be
-                        publicly recognized or listed on online or offline recognition
-                        platforms.
-                      </p>
-                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>A brand new 26 foot tall LED holiday tree</li>
-                        <li>Animal Appearances</li>
-                        <li>Arts &amp; crafts (limited space available)</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="zoo-box">
-                      <h5 class="mt-0">Rights Of The User</h5>
-                      <p>
-                        Viserlife Zoo collects and stores donor name, address, phone
-                        number, fax number, email address, spouse/partner name, age /
-                        birthdate, as provided by the donor through the Zoo’s website,
-                        at a special event, over the phone, by mailing a check, or
-                        through other contact and conversations with Zoo staff. From
-                        time to time, we may collect personal information from donors in
-                        ways not described above.
-                      </p>
-                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>A brand new 26 foot tall LED holiday tree</li>
-                        <li>Animal Appearances</li>
-                        <li>Arts &amp; crafts (limited space available)</li>
-                        <li>Appearances by Santa until December 23</li>
-                        <li>Letters to Santa</li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="zoo-box">
-                      <h5 class="mt-0">Data Security</h5>
-                      <p>
-                        We will use the personal information to protect against
-                        potential fraud. We may verify with third parties the
-                        information collected in the course of processing a gift, event
-                        registration, or other donation. If you use a credit or debit
-                        card on the website, we may use card authorization and fraud
-                        screening services to verify that your card information and
-                        address matches the information that you supplied to us and that
-                        the card being used has not been reported lost or stolen.
-                      </p>
-                    </div>
-                  </li>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-5 py-5">
+      <div class="row g-4">
+        <div class="col-md-8">
+          <ul class="list" style="--gap: 2rem">
+            <li>
+              <div class="zoo-box">
+                <h5 class="mt-0">General Privacy &amp; Policy?</h5>
+                <p class="mb-0">
+                  As a donor submitting personally identifying information to The
+                  Zoological Society of Viserlife (Viserlife Zoo”) or any Zoo
+                  staff through electronic, written, or oral communications,
+                  contributions, event registrations, and donor society
+                  memberships, e.g. Friends of Viserlife Zoo and 1859 Society, you
+                  consent to the terms and conditions of the Donor Privacy Policy
+                  and to the Zoo’s processing and use of personal information for
+                  the purposes stated below.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="zoo-box">
+                <h5 class="mt-0">How We Collect Data</h5>
+                <p>
+                  Viserlife Zoo respects our donors’ choices and control over
+                  their information. All donors have the right to review
+                  information that Viserlife Zoo has collected and stored. To
+                  review that information, please contact the Zoo in writing. All
+                  donors also have the right to give anonymously, and, when
+                  Viserlife Zoo is notified of this intention, donors will not be
+                  publicly recognized or listed on online or offline recognition
+                  platforms.
+                </p>
+                <ul class="list list--base" style="--gap: 0.5rem">
+                  <li>A brand new 26 foot tall LED holiday tree</li>
+                  <li>Animal Appearances</li>
+                  <li>Arts &amp; crafts (limited space available)</li>
                 </ul>
               </div>
-              <div class="col-md-4">
-                <div class="ps-xl-4 ps-xxl-5">
-                  <ul class="list" style="--gap: 2rem">
-                    <li>
-                      <a href="./Karachi Safari Park.pdf" download class="t-link btn btn--xxl btn--base w-100 text-uppercase">
-                        download pdf
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+            </li>
+            <li>
+              <div class="zoo-box">
+                <h5 class="mt-0">Rights Of The User</h5>
+                <p>
+                  Viserlife Zoo collects and stores donor name, address, phone
+                  number, fax number, email address, spouse/partner name, age /
+                  birthdate, as provided by the donor through the Zoo’s website,
+                  at a special event, over the phone, by mailing a check, or
+                  through other contact and conversations with Zoo staff. From
+                  time to time, we may collect personal information from donors in
+                  ways not described above.
+                </p>
+                <ul class="list list--base" style="--gap: 0.5rem">
+                  <li>A brand new 26 foot tall LED holiday tree</li>
+                  <li>Animal Appearances</li>
+                  <li>Arts &amp; crafts (limited space available)</li>
+                  <li>Appearances by Santa until December 23</li>
+                  <li>Letters to Santa</li>
+                </ul>
               </div>
+            </li>
+            <li>
+              <div class="zoo-box">
+                <h5 class="mt-0">Data Security</h5>
+                <p>
+                  We will use the personal information to protect against
+                  potential fraud. We may verify with third parties the
+                  information collected in the course of processing a gift, event
+                  registration, or other donation. If you use a credit or debit
+                  card on the website, we may use card authorization and fraud
+                  screening services to verify that your card information and
+                  address matches the information that you supplied to us and that
+                  the card being used has not been reported lost or stolen.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="ps-xl-4 ps-xxl-5">
+            <ul class="list" style="--gap: 2rem">
+              <li>
+                <a href="./Karachi Safari Park.pdf" download class="t-link btn btn--xxl btn--base w-100 text-uppercase">
+                  download pdf
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mt-5 ">
+      <div class="row">
+        <div class="col-12">
+          <div class="slider d-flex justify-content-evenly">
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3">
+            </div>
+            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+              <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3">
             </div>
           </div>
-    </section>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="footer"></section>
 
-
-
-
-
-    <section id="footer"></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/footer.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/footer.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Slick JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+        responsive: [
+          {
+            breakpoint: 1600, // Extra Large screen
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              speed: 3000,
+              cssEase: 'linear'
+            }
+          },
+          {
+            breakpoint: 985, // Large screen
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              speed: 3000,
+              cssEase: 'linear'
+            }
+          },
+          {
+            breakpoint: 766, // Medium screen
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480, // Small screen
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+
+  </script>
 </body>
+
 </html>

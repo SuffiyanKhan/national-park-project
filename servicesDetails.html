@@ -70,6 +70,26 @@
         transform: rotate(360deg);
       }
     }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #internetPage,
+    #noInternetPage {
+      text-align: center;
+      /* padding: 20px; */
+    }
+
+    #internetPage h1,
+    #noInternetPage h1 {
+      color: #333;
+    }
+
+    #noInternetPage {
+      background-color: #f2f2f2;
+    }
   </style>
   <script>
     // JavaScript code to show the loader when the page starts loading
@@ -81,198 +101,210 @@
 </head>
 
 <body>
-  <!-- Loader -->
-  <div id="loader">
-    <div class="loader-circle"></div> <!-- Loader ka shape -->
-  </div>
-  <section id="navbar"></section>
-  <section class="bg-image">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="overlay-text d-none d-xl-block">
-            <p class="text-center  text-white fs-1 text-capitalize fw-bold ">our services</p>
+  <section id="internetPage">
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-circle"></div> <!-- Loader ka shape -->
+    </div>
+    <section id="navbar"></section>
+    <section class="bg-image">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="overlay-text d-none d-xl-block">
+              <p class="text-center  text-white fs-1 text-capitalize fw-bold ">our services</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mt-5 py-5">
-      <div class="row g-4">
-        <div class="col-md-8">
-          <img src="./Assets/gallery/animal/service-details-img-1.png" alt="image" class="img-fluid">
-          <h4>Save Animals</h4>
-          <p>
-            In addition to housing endangered animals—some extinct in the wild—and supporting conservation efforts
-            around the world, viserlife Zoo helps create empathy and understanding for wildlife through programs like
-            the UNLESS Contest, which has inspired tens of thousands of students over the past decade to learn about and
-            create advocacy campaigns to make a lasting impact on an endangered species of their choosing. To date, the
-            UNLESS Contest has resulted in hundreds of trees planted in Brazil, thousands of signatures in support of a
-            wildlife bridge, and dollars raised to support our partners in the field.
+    </section>
+    <section>
+      <div class="container mt-5 py-5">
+        <div class="row g-4">
+          <div class="col-md-8">
+            <img src="./Assets/gallery/animal/service-details-img-1.png" alt="image" class="img-fluid">
+            <h4>Save Animals</h4>
+            <p>
+              In addition to housing endangered animals—some extinct in the wild—and supporting conservation efforts
+              around the world, viserlife Zoo helps create empathy and understanding for wildlife through programs like
+              the UNLESS Contest, which has inspired tens of thousands of students over the past decade to learn about
+              and
+              create advocacy campaigns to make a lasting impact on an endangered species of their choosing. To date,
+              the
+              UNLESS Contest has resulted in hundreds of trees planted in Brazil, thousands of signatures in support of
+              a
+              wildlife bridge, and dollars raised to support our partners in the field.
 
-          </p>
-          <div class="row g-4">
-            <div class="col-xl-6">
-              <p>
-                Our highly trained staff are here to answer any questions you may have about the animals or
-                conservation. Fill out the form to ask an expert, and a member of the viserlife Zoo team will get back
-                to you!
-              </p>
-              <ul class="list list--base">
-                <li>A brand new 26 foot tall LED holiday tree</li>
-                <li>Animal Appearances</li>
-                <li>Arts &amp; crafts (limited space available)</li>
-                <li>Appearances by Santa until December 23</li>
-                <li>Letters to Santa</li>
-                <li>Adventure at Every Turn</li>
-                <li>Become a Zoo Nature Blazer</li>
+            </p>
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <p>
+                  Our highly trained staff are here to answer any questions you may have about the animals or
+                  conservation. Fill out the form to ask an expert, and a member of the viserlife Zoo team will get back
+                  to you!
+                </p>
+                <ul class="list list--base">
+                  <li>A brand new 26 foot tall LED holiday tree</li>
+                  <li>Animal Appearances</li>
+                  <li>Arts &amp; crafts (limited space available)</li>
+                  <li>Appearances by Santa until December 23</li>
+                  <li>Letters to Santa</li>
+                  <li>Adventure at Every Turn</li>
+                  <li>Become a Zoo Nature Blazer</li>
+                </ul>
+              </div>
+              <div class="col-xl-6">
+                <img src="./Assets/gallery/animal/blog-post-3.png" alt="image" class="img-fluid">
+              </div>
+            </div>
+            <h4>Common question about save anilams</h4>
+            <div class="accordion custom--accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true">
+                    Why Viserlife?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    A world where humans and animals coexist in harmony—that's our vision. By supporting the Zoo, you
+                    can
+                    help us bring it to life.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false">
+                    How to buy ticket in online?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Viserlife Zoo is open daily from 9:30 am-5 pm. All guests, including members, must make advance
+                    online
+                    reservations.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false">
+                    Upcoming Animals?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Make your Viserlife Zoo visit memorable! From scavenger hunts and rope courses to carousel rides and
+                    animal experiences, we offer a number of attractions for visitors of all ages. Check below for
+                    details
+                    on what's currently open.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ps-xl-4 ps-xxl-5">
+              <ul class="list" style="--gap: 2rem">
+
+                <li>
+                  <div class="widget">
+                    <h4 class="mt-0">Our Services</h4>
+                    <ul class="list list--base" style="--gap: 0.5rem">
+                      <li>
+                        <a class="t-link t-link--base text-clr text-capitalize">
+                          car parking
+                        </a>
+                      </li>
+                      <li>
+                        <a class="t-link t-link--base text-clr text-capitalize">
+                          Photo with animals
+                        </a>
+                      </li>
+                      <li>
+                        <a class="t-link t-link--base text-clr text-capitalize">
+                          Zoo Shopping
+                        </a>
+                      </li>
+                      <li>
+                        <a class="t-link t-link--base text-clr text-capitalize">
+                          a guided services
+                        </a>
+                      </li>
+                      <li>
+                        <a class="t-link t-link--base text-clr text-capitalize">
+                          Food &amp; beverage
+                        </a>
+                      </li>
+                      <li>
+                        <a class="t-link t-link--base text-clr text-capitalize">
+                          Save Animals
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a download="Karachi Safari Park" href="./Karachi Safari Park.pdf"
+                    class="t-link btn btn--xxl btn--base w-100 text-uppercase">
+                    download pdf
+                  </a>
+                </li>
+                <li>
+                  <img src="./Assets/gallery/animal/event-img-8.png" alt="image" class="img-fluid">
+                </li>
               </ul>
             </div>
-            <div class="col-xl-6">
-              <img src="./Assets/gallery/animal/blog-post-3.png" alt="image" class="img-fluid">
-            </div>
-          </div>
-          <h4>Common question about save anilams</h4>
-          <div class="accordion custom--accordion" id="faqAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true">
-                  Why Viserlife?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  A world where humans and animals coexist in harmony—that's our vision. By supporting the Zoo, you can
-                  help us bring it to life.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false">
-                  How to buy ticket in online?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Viserlife Zoo is open daily from 9:30 am-5 pm. All guests, including members, must make advance online
-                  reservations.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false">
-                  Upcoming Animals?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">
-                  Make your Viserlife Zoo visit memorable! From scavenger hunts and rope courses to carousel rides and
-                  animal experiences, we offer a number of attractions for visitors of all ages. Check below for details
-                  on what's currently open.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ps-xl-4 ps-xxl-5">
-            <ul class="list" style="--gap: 2rem">
-
-              <li>
-                <div class="widget">
-                  <h4 class="mt-0">Our Services</h4>
-                  <ul class="list list--base" style="--gap: 0.5rem">
-                    <li>
-                      <a class="t-link t-link--base text-clr text-capitalize">
-                        car parking
-                      </a>
-                    </li>
-                    <li>
-                      <a class="t-link t-link--base text-clr text-capitalize">
-                        Photo with animals
-                      </a>
-                    </li>
-                    <li>
-                      <a class="t-link t-link--base text-clr text-capitalize">
-                        Zoo Shopping
-                      </a>
-                    </li>
-                    <li>
-                      <a class="t-link t-link--base text-clr text-capitalize">
-                        a guided services
-                      </a>
-                    </li>
-                    <li>
-                      <a class="t-link t-link--base text-clr text-capitalize">
-                        Food &amp; beverage
-                      </a>
-                    </li>
-                    <li>
-                      <a class="t-link t-link--base text-clr text-capitalize">
-                        Save Animals
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a download="Karachi Safari Park" href="./Karachi Safari Park.pdf"
-                  class="t-link btn btn--xxl btn--base w-100 text-uppercase">
-                  download pdf
-                </a>
-              </li>
-              <li>
-                <img src="./Assets/gallery/animal/event-img-8.png" alt="image" class="img-fluid">
-              </li>
-            </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container  ">
-      <div class="row">
-        <div class="col-12">
-          <div class="slider d-flex justify-content-evenly">
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3">
+    </section>
+    <section>
+      <div class="container  ">
+        <div class="row">
+          <div class="col-12">
+            <div class="slider d-flex justify-content-evenly">
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section id="footer"></section>
   </section>
-  <section id="footer"></section>
 
 
+  <div id="noInternetPage" style="display: none;">
+    <h1>No Internet Connection</h1>
+    <p>Please check your internet connection and try again.</p>
+  </div>
 
 
 

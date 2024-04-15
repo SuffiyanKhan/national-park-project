@@ -76,6 +76,26 @@
         transform: rotate(360deg);
       }
     }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #internetPage,
+    #noInternetPage {
+      text-align: center;
+      /* padding: 20px; */
+    }
+
+    #internetPage h1,
+    #noInternetPage h1 {
+      color: #333;
+    }
+
+    #noInternetPage {
+      background-color: #f2f2f2;
+    }
   </style>
   <script>
     // JavaScript code to show the loader when the page starts loading
@@ -87,150 +107,160 @@
 </head>
 
 <body>
-  <!-- Loader -->
-  <div id="loader">
-    <div class="loader-circle"></div> <!-- Loader ka shape -->
-  </div>
-  <section id="navbar"></section>
-  <section class="bg-image">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <div class="overlay-text">
-            <p class="text-center text-white fs-1 text-capitalize fw-bold ">privacy & policy</p>
+
+  <section id="internetPage">
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-circle"></div> <!-- Loader ka shape -->
+    </div>
+    <section id="navbar"></section>
+    <section class="bg-image">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="overlay-text">
+              <p class="text-center text-white fs-1 text-capitalize fw-bold ">privacy & policy</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mt-5 py-5">
-      <div class="row g-4">
-        <div class="col-md-8">
-          <ul class="list" style="--gap: 2rem">
-            <li>
-              <div class="zoo-box">
-                <h5 class="mt-0">General Privacy &amp; Policy?</h5>
-                <p class="mb-0">
-                  As a donor submitting personally identifying information to The
-                  Zoological Society of Viserlife (Viserlife Zoo”) or any Zoo
-                  staff through electronic, written, or oral communications,
-                  contributions, event registrations, and donor society
-                  memberships, e.g. Friends of Viserlife Zoo and 1859 Society, you
-                  consent to the terms and conditions of the Donor Privacy Policy
-                  and to the Zoo’s processing and use of personal information for
-                  the purposes stated below.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="zoo-box">
-                <h5 class="mt-0">How We Collect Data</h5>
-                <p>
-                  Viserlife Zoo respects our donors’ choices and control over
-                  their information. All donors have the right to review
-                  information that Viserlife Zoo has collected and stored. To
-                  review that information, please contact the Zoo in writing. All
-                  donors also have the right to give anonymously, and, when
-                  Viserlife Zoo is notified of this intention, donors will not be
-                  publicly recognized or listed on online or offline recognition
-                  platforms.
-                </p>
-                <ul class="list list--base" style="--gap: 0.5rem">
-                  <li>A brand new 26 foot tall LED holiday tree</li>
-                  <li>Animal Appearances</li>
-                  <li>Arts &amp; crafts (limited space available)</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="zoo-box">
-                <h5 class="mt-0">Rights Of The User</h5>
-                <p>
-                  Viserlife Zoo collects and stores donor name, address, phone
-                  number, fax number, email address, spouse/partner name, age /
-                  birthdate, as provided by the donor through the Zoo’s website,
-                  at a special event, over the phone, by mailing a check, or
-                  through other contact and conversations with Zoo staff. From
-                  time to time, we may collect personal information from donors in
-                  ways not described above.
-                </p>
-                <ul class="list list--base" style="--gap: 0.5rem">
-                  <li>A brand new 26 foot tall LED holiday tree</li>
-                  <li>Animal Appearances</li>
-                  <li>Arts &amp; crafts (limited space available)</li>
-                  <li>Appearances by Santa until December 23</li>
-                  <li>Letters to Santa</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="zoo-box">
-                <h5 class="mt-0">Data Security</h5>
-                <p>
-                  We will use the personal information to protect against
-                  potential fraud. We may verify with third parties the
-                  information collected in the course of processing a gift, event
-                  registration, or other donation. If you use a credit or debit
-                  card on the website, we may use card authorization and fraud
-                  screening services to verify that your card information and
-                  address matches the information that you supplied to us and that
-                  the card being used has not been reported lost or stolen.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <div class="ps-xl-4 ps-xxl-5">
+    </section>
+    <section>
+      <div class="container mt-5 py-5">
+        <div class="row g-4">
+          <div class="col-md-8">
             <ul class="list" style="--gap: 2rem">
               <li>
-                <a href="./Karachi Safari Park.pdf" download class="t-link btn btn--xxl btn--base w-100 text-uppercase">
-                  download pdf
-                </a>
+                <div class="zoo-box">
+                  <h5 class="mt-0">General Privacy &amp; Policy?</h5>
+                  <p class="mb-0">
+                    As a donor submitting personally identifying information to The
+                    Zoological Society of Viserlife (Viserlife Zoo”) or any Zoo
+                    staff through electronic, written, or oral communications,
+                    contributions, event registrations, and donor society
+                    memberships, e.g. Friends of Viserlife Zoo and 1859 Society, you
+                    consent to the terms and conditions of the Donor Privacy Policy
+                    and to the Zoo’s processing and use of personal information for
+                    the purposes stated below.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="zoo-box">
+                  <h5 class="mt-0">How We Collect Data</h5>
+                  <p>
+                    Viserlife Zoo respects our donors’ choices and control over
+                    their information. All donors have the right to review
+                    information that Viserlife Zoo has collected and stored. To
+                    review that information, please contact the Zoo in writing. All
+                    donors also have the right to give anonymously, and, when
+                    Viserlife Zoo is notified of this intention, donors will not be
+                    publicly recognized or listed on online or offline recognition
+                    platforms.
+                  </p>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>A brand new 26 foot tall LED holiday tree</li>
+                    <li>Animal Appearances</li>
+                    <li>Arts &amp; crafts (limited space available)</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="zoo-box">
+                  <h5 class="mt-0">Rights Of The User</h5>
+                  <p>
+                    Viserlife Zoo collects and stores donor name, address, phone
+                    number, fax number, email address, spouse/partner name, age /
+                    birthdate, as provided by the donor through the Zoo’s website,
+                    at a special event, over the phone, by mailing a check, or
+                    through other contact and conversations with Zoo staff. From
+                    time to time, we may collect personal information from donors in
+                    ways not described above.
+                  </p>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>A brand new 26 foot tall LED holiday tree</li>
+                    <li>Animal Appearances</li>
+                    <li>Arts &amp; crafts (limited space available)</li>
+                    <li>Appearances by Santa until December 23</li>
+                    <li>Letters to Santa</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="zoo-box">
+                  <h5 class="mt-0">Data Security</h5>
+                  <p>
+                    We will use the personal information to protect against
+                    potential fraud. We may verify with third parties the
+                    information collected in the course of processing a gift, event
+                    registration, or other donation. If you use a credit or debit
+                    card on the website, we may use card authorization and fraud
+                    screening services to verify that your card information and
+                    address matches the information that you supplied to us and that
+                    the card being used has not been reported lost or stolen.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container mt-5 ">
-      <div class="row">
-        <div class="col-12">
-          <div class="slider d-flex justify-content-evenly">
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3">
-            </div>
-            <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
-              <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3">
+          <div class="col-md-4">
+            <div class="ps-xl-4 ps-xxl-5">
+              <ul class="list" style="--gap: 2rem">
+                <li>
+                  <a href="./Karachi Safari Park.pdf" download
+                    class="t-link btn btn--xxl btn--base w-100 text-uppercase">
+                    download pdf
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container mt-5 ">
+        <div class="row">
+          <div class="col-12">
+            <div class="slider d-flex justify-content-evenly">
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3">
+              </div>
+              <div class="border d-flex justify-content-center align-items-center" style="height: 200px; width: 200px;">
+                <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer"></section>
   </section>
 
-  <section id="footer"></section>
+
+  <div id="noInternetPage" style="display: none;">
+    <h1>No Internet Connection</h1>
+    <p>Please check your internet connection and try again.</p>
+  </div>
+
 
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js

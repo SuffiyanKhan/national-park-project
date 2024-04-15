@@ -61,6 +61,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .loader-circle {
             border: 8px solid #f3f3f3;
             border-top: 8px solid rgb(134 195 5);
@@ -79,6 +80,26 @@
                 transform: rotate(360deg);
             }
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #internetPage,
+        #noInternetPage {
+            text-align: center;
+            /* padding: 20px; */
+        }
+
+        #internetPage h1,
+        #noInternetPage h1 {
+            color: #333;
+        }
+
+        #noInternetPage {
+            background-color: #f2f2f2;
+        }
     </style>
     <script>
         // JavaScript code to show the loader when the page starts loading
@@ -90,113 +111,117 @@
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="loader-circle"></div> <!-- Loader ka shape -->
+
+    <section id="internetPage">
+        <!-- Loader -->
+        <div id="loader">
+            <div class="loader-circle"></div> <!-- Loader ka shape -->
+        </div>
+        <section id="navbar"></section>
+        <section class="bg-image">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="overlay-text">
+                            <p class="text-center text-white fs-1 text-capitalize fw-bold ">contact</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container conatct">
+                <div class="row  mt-5 mb-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12   p-5">
+                        <h4>How can i help you</h4>
+                        <p>Viserlife Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required
+                            for
+                            all guests. We look forward to seeing you!</p>
+                        <p class="border p-3">
+                            <i class="fa-solid fa-phone fs-5"></i>
+                            <span class="ms-3">+123 - 456 - 789000</span>
+
+                        </p>
+                        <p class="border p-3">
+                            <i class="fa-regular fa-envelope fs-4"></i> <span class="ms-3">support@mail.com</span>
+                        </p>
+                        <p class="border p-3">
+                            <i class="fa-solid fa-globe fs-4"></i> <span class="ms-3">www.Viserlife.com</span>
+                        </p>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12   p-5 " style="background-color: #F8FAFC;">
+                        <form action="">
+                            <input type="text" class="form-control mb-4" style="height: 50px;" placeholder="Name">
+                            <input type="text" class="form-control mb-4" style="height: 50px;"
+                                placeholder="Email Address">
+                            <input type="text" class="form-control mb-4" style="height: 50px;" placeholder="Subject">
+                            <input type="text" class="form-control mb-4" style="height: 70px;" placeholder="Message">
+                            <button class="btn btn-primary fw-semibold" style="background-color: rgb(134 195 5);">Submit
+                                Query</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+        </section>
+        <section>
+            <div class="container mt-5  ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57892.626435257545!2d67.03197834863279!3d24.922217699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338c41059ace9%3A0x59f6e847f82104b2!2sSafari%20Park!5e0!3m2!1sen!2s!4v1712826904349!5m2!1sen!2s"
+                            width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-5 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider d-flex justify-content-evenly">
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer"></section>
+    </section>
+
+    <div id="noInternetPage" style="display: none;">
+        <h1>No Internet Connection</h1>
+        <p>Please check your internet connection and try again.</p>
     </div>
-    <section id="navbar"></section>
-    <section class="bg-image">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="overlay-text">
-                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">contact</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container conatct">
-            <div class="row  mt-5 mb-5">
-                <div class="col-lg-6 col-md-6 col-sm-12   p-5">
-                    <h4>How can i help you</h4>
-                    <p>Viserlife Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for
-                        all guests. We look forward to seeing you!</p>
-                    <p class="border p-3">
-                        <i class="fa-solid fa-phone fs-5"></i>
-                        <span class="ms-3">+123 - 456 - 789000</span>
-
-                    </p>
-                    <p class="border p-3">
-                        <i class="fa-regular fa-envelope fs-4"></i> <span class="ms-3">support@mail.com</span>
-                    </p>
-                    <p class="border p-3">
-                        <i class="fa-solid fa-globe fs-4"></i> <span class="ms-3">www.Viserlife.com</span>
-                    </p>
-
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12   p-5 " style="background-color: #F8FAFC;">
-                    <form action="">
-                        <input type="text" class="form-control mb-4" style="height: 50px;" placeholder="Name">
-                        <input type="text" class="form-control mb-4" style="height: 50px;" placeholder="Email Address">
-                        <input type="text" class="form-control mb-4" style="height: 50px;" placeholder="Subject">
-                        <input type="text" class="form-control mb-4" style="height: 70px;" placeholder="Message">
-                        <button class="btn btn-primary fw-semibold" style="background-color: rgb(134 195 5);">Submit
-                            Query</button>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-    </section>
-    <section>
-        <div class="container mt-5  ">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57892.626435257545!2d67.03197834863279!3d24.922217699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338c41059ace9%3A0x59f6e847f82104b2!2sSafari%20Park!5e0!3m2!1sen!2s!4v1712826904349!5m2!1sen!2s"
-                        width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container mt-5 ">
-            <div class="row">
-                <div class="col-12">
-                    <div class="slider d-flex justify-content-evenly">
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
-
-
-
-
-
-    <section id="footer"></section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
     <script src="./js/navbar.js"></script>

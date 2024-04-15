@@ -79,6 +79,26 @@
                 transform: rotate(360deg);
             }
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #internetPage,
+        #noInternetPage {
+            text-align: center;
+            /* padding: 20px; */
+        }
+
+        #internetPage h1,
+        #noInternetPage h1 {
+            color: #333;
+        }
+
+        #noInternetPage {
+            background-color: #f2f2f2;
+        }
     </style>
     <script>
         // JavaScript code to show the loader when the page starts loading
@@ -90,98 +110,108 @@
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="loader-circle"></div> <!-- Loader ka shape -->
+    <section id="internetPage">
+        <!-- Loader -->
+        <div id="loader">
+            <div class="loader-circle"></div> <!-- Loader ka shape -->
+        </div>
+        <section id="navbar"></section>
+        <section class="bg-image">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="overlay-text">
+                            <p class="text-center text-white fs-1 text-capitalize fw-bold ">gallery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row g-3 mt-5" id="imageRow">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/francesco-ZxNKxnR32Ng-unsplash.jpg" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/istockphoto-1165028488-1024x1024.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/istockphoto-1458215547-1024x1024.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/leon-pauleikhoff-98FC6SYw8ls-unsplash.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/mika-brandt-UlipBbZpweg-unsplash.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/istockphoto-1165028488-1024x1024.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./Assets/gallery/images/istockphoto-1457528151-1024x1024.jpg" class="img-fluid"
+                            alt="">
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <button id="showMoreBtn" class="btn btn fw-semibold"
+                        style="background-color: rgb(134 195 5); color: white;">Show More</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mt-5 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider d-flex justify-content-evenly">
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3"></div>
+                            <div class="border d-flex justify-content-center align-items-center"
+                                style="height: 200px; width: 200px;"><img
+                                    src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer"></section>
+    </section>
+
+
+    <div id="noInternetPage" style="display: none;">
+        <h1>No Internet Connection</h1>
+        <p>Please check your internet connection and try again.</p>
     </div>
-    <section id="navbar"></section>
-    <section class="bg-image">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="overlay-text">
-                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">gallery</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row g-3 mt-5" id="imageRow">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/francesco-ZxNKxnR32Ng-unsplash.jpg" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/istockphoto-1165028488-1024x1024.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/istockphoto-1458215547-1024x1024.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/leon-pauleikhoff-98FC6SYw8ls-unsplash.jpg" class="img-fluid"
-                        alt="">
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/mika-brandt-UlipBbZpweg-unsplash.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/istockphoto-1165028488-1024x1024.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <img src="./Assets/gallery/images/istockphoto-1457528151-1024x1024.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="text-center mt-3">
-                <button id="showMoreBtn" class="btn btn fw-semibold"
-                    style="background-color: rgb(134 195 5); color: white;">Show More</button>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container mt-5 ">
-            <div class="row">
-                <div class="col-12">
-                    <div class="slider d-flex justify-content-evenly">
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-2-removebg-preview.png" alt="Image 2"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-3-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-4-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-5-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-6-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-7-removebg-preview.png" alt="Image 3"></div>
-                        <div class="border d-flex justify-content-center align-items-center"
-                            style="height: 200px; width: 200px;"><img
-                                src="./Assets/client-slider/client-8-removebg-preview.png" alt="Image 3"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="footer"></section>
-
-
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>

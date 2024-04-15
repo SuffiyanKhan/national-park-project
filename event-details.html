@@ -1,612 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/index.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <style>
-        .bg-image{
-            width: 100%;
-            height: 60vh;
-            background-image: url(./Assets/gallery/slider/slider-1.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            object-fit: cover;
-            
-        }
-        .overlay-text {
-            position: absolute; /* Position the text absolutely */
-            top: 50%; /* Align the top edge of the text to the vertical center */
-            left: 50%; /* Align the left edge of the text to the horizontal center */
-            transform: translate(-50%, -50%); /* Adjust the text position to center */
-            
-            font-family: 'Courier New', Courier, monospace;
-            color: white; /*Text color
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .bg-image {
+      width: 100%;
+      height: 60vh;
+      background-image: url(./Assets/gallery/slider/slider-1.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+
+    }
+
+    .overlay-text {
+      position: absolute;
+      /* Position the text absolutely */
+      top: 50%;
+      /* Align the top edge of the text to the vertical center */
+      left: 50%;
+      /* Align the left edge of the text to the horizontal center */
+      transform: translate(-50%, -50%);
+      /* Adjust the text position to center */
+
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      /*Text color
             /* font-size: 2rem; Adjust the font size */
-        }
-        #loader {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Halka sa opaque white background */
-            z-index: 9999; /* Loader ko dusre elements ke upar rakhne ke liye */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        /* Loader ki shape aur animation */
-        .loader-circle {
-            border: 8px solid #f3f3f3; /* Light grey color */
-            border-top: 8px solid rgb(134 195 5); /* Blue color */
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            animation: spin 2s linear infinite; /* Spin animation, 2 seconds */
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-         
-    </style>
-    <script>
-        // JavaScript code to show the loader when the page starts loading
-        window.addEventListener("load", function() {
-            var loader = document.getElementById("loader");
-            loader.style.display = "none"; // Hide the loader when the page is fully loaded
-        });
-    </script>
+    }
+
+    #loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      /* Halka sa opaque white background */
+      z-index: 9999;
+      /* Loader ko dusre elements ke upar rakhne ke liye */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Loader ki shape aur animation */
+    .loader-circle {
+      border: 8px solid #f3f3f3;
+      /* Light grey color */
+      border-top: 8px solid rgb(134 195 5);
+      /* Blue color */
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      animation: spin 2s linear infinite;
+      /* Spin animation, 2 seconds */
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #internetPage,
+    #noInternetPage {
+      text-align: center;
+      /* padding: 20px; */
+    }
+
+    #internetPage h1,
+    #noInternetPage h1 {
+      color: #333;
+    }
+
+    #noInternetPage {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <script>
+    // JavaScript code to show the loader when the page starts loading
+    window.addEventListener("load", function () {
+      var loader = document.getElementById("loader");
+      loader.style.display = "none"; // Hide the loader when the page is fully loaded
+    });
+  </script>
 </head>
+
 <body>
+
+  <section id="internetPage">
     <!-- Loader -->
-  <div id="loader">
-    <div class="loader-circle"></div> <!-- Loader ka shape -->
-</div>
+    <div id="loader">
+      <div class="loader-circle"></div> <!-- Loader ka shape -->
+    </div>
     <section id="navbar"></section>
     <section class="bg-image">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="overlay-text">
-                        <p class="text-center text-white fs-1 text-capitalize fw-bold ">Event detail</p>
-                    </div>
-                </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="overlay-text">
+              <p class="text-center text-white fs-1 text-capitalize fw-bold ">Event detail</p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="container mt-5 pt-5">
-            <div class="row g-4 justify-content-center">
-              <div class="col-12">
-                <div class="event-counter">
-                  <img src="./Assets/gallery/slider/event-counter-img.png" alt="image" class="event-counter__img">
-                </div>
+      <div class="container mt-5 pt-5">
+        <div class="row g-4 justify-content-center">
+          <div class="col-12">
+            <div class="event-counter">
+              <img src="./Assets/gallery/slider/event-counter-img.png" alt="image" class="event-counter__img">
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <h4>Calling all early birds!</h4>
+            <p>
+              Visit your favorite exhibits an hour before gates open to the general
+              public during these exclusive members-only morning strolls. Aenean
+              viverra rhoncus pede. Pellentesque habitant morbi tristique senectus
+              et netus et malesuada fames ac turpis egestas. Ut non enim eleifend
+              felis pretium feugiat.
+            </p>
+            <p class="mb-5">
+              This pioneering exhibit benefits animal by offering more opportunities for long-distance travel, greater
+              environmental variety and an increased ability to determine their own experiences, while similarly
+              enhancing the visitor experience by creating a more dynamic engagement. Now as you move around the Zoo,
+              the Zoo moves around you.
+            </p>
+            <div class="row g-4 align-items-center">
+              <div class="col-xl-6">
+                <img src="./Assets/gallery/slider/event-img-7.png" alt="image" class="w-100">
               </div>
-              <div class="col-lg-8">
-                <h4>Calling all early birds!</h4>
-                <p>
-                  Visit your favorite exhibits an hour before gates open to the general
-                  public during these exclusive members-only morning strolls. Aenean
-                  viverra rhoncus pede. Pellentesque habitant morbi tristique senectus
-                  et netus et malesuada fames ac turpis egestas. Ut non enim eleifend
-                  felis pretium feugiat.
-                </p>
-                <p class="mb-5">
-                  This pioneering exhibit benefits animal by offering more opportunities for long-distance travel, greater environmental variety and an increased ability to determine their own experiences, while similarly enhancing the visitor experience by creating a more dynamic engagement. Now as you move around the Zoo, the Zoo moves around you.
-                </p>
-                <div class="row g-4 align-items-center">
-                  <div class="col-xl-6">
-                    <img src="./Assets/gallery/slider/event-img-7.png" alt="image" class="w-100">
-                  </div>
-                  <div class="col-xl-6">
-                    <h5 class="mt-xl-0">Join Us To Enjoy:</h5>
-                    <ul class="list list--base">
-                      <li>More than one million bright and dazzling tree !</li>
-                      <li>A brand new 26 foot tall LED holiday tree</li>
-                      <li>Animal Appearances</li>
-                      <li>Letters to Santa</li>
-                      <li>Hot chocolate and cookies</li>
-                      <li>Snowman's River Boat Rides</li>
-                      <li>Holiday Shopping at the Gift Shop</li>
-                    </ul>
-                  </div>
-                </div>
-                <p class="mt-5">
-                  Become a member today and take advantage of exclusive members-only
-                  events like this one, plus enjoy free admission, free parking, and
-                  discounts on retail and dining. Membership pays for itself in two
-                  visits!
-                </p>
-                <p class="mb-5">
-                  With an impressive crop of regional craft brews, Summer Ale Festival has much to offer the beer enthusiast. This year, guests can enjoy more than 100 award-winning seasonal craft beers and fresh, local fare from the region’s food trucks.
-                </p>
-                <div class="table-responsive--md">
-                  <table class="table custom--table">
-                    <thead>
-                      <tr>
-                        <th>Date &amp; Time</th>
-                        <th>Theme</th>
-                        <th>Activity</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-label="Amount">
-                          <span class="d-block sm-text">
-                            November 26 &amp; 27 at 08:30pm
-                          </span>
-                        </td>
-                        <td data-label="Currency">Wild Works Ropes Course</td>
-                        <td data-label="Deposit">
-                          The Zoo’s high-flying WildWorks ropes course is an
-                          ultra-exhilarating experience for both adults and littles
-                        </td>
-                      </tr>
-                      <tr>
-                        <td data-label="Amount">December 5 at 08:30pm</td>
-                        <td data-label="Currency">Become a Philly Zoo Nature Blazer</td>
-                        <td data-label="Deposit">
-                          Experience the Zoo like never before with our NEW Nature
-                          Blazer scavenger hunt! Navigate our exhibits with a smart
-                          compass, completing challenges and answering trivia questions
-                          at each stop through an interactive mobile app.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td data-label="Amount">May 16 at 08:30</td>
-                        <td data-label="Currency">Adventure at Everytime</td>
-                        <td data-label="Deposit">
-                          Make your viserlife Zoo visit memorable! From scavenger hunts
-                          and rope courses to carousel rides and animal experiences, we
-                          offer a number of attractions for visitors of all ages. Check
-                          below for details on what's currently open.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td data-label="Amount">November 26 &amp; 27 at 08:30pm</td>
-                        <td data-label="Currency">
-                          <strong>Degital 3D animation</strong> ligula mi congue ismodn
-                          ligula urna.
-                        </td>
-                        <td data-label="Deposit">
-                          WildWorks ropes course is an ultra-exhilarating experience for
-                          both adults and littles
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="section--sm">
-                  <div class="row g-4 justify-content-center justify-content-lg-start">
-                    <div class="col-md-7 col-lg-10">
-                      <div class="text-center text-lg-start pe-xxl-4">
-                        <h2 class="mt-0">What`s you want to know about event</h2>
-                        <p class="section__para mx-auto ms-lg-0 mb-0">
-                          WildWorks ropes course is an ultra-exhilarating experience for
-                          both adults and littles
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-xl-6">
-                      <div class="accordion custom--accordion custom--accordion-alt" id="faqAccordion">
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
-                                Why Viserlife?
-                              </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                              <div class="accordion-body">
-                                A world where humans and animals coexist in harmony—that's
-                                our vision. By supporting the Zoo, you can help us bring it
-                                to life.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
-                                How to buy ticket in online?
-                              </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                              <div class="accordion-body">
-                                Viserlife Zoo is open daily from 9:30 am-5 pm. All guests,
-                                including members, must make advance online reservations.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
-                                Upcoming Animals?
-                              </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                              <div class="accordion-body">
-                                Make your Viserlife Zoo visit memorable! From scavenger
-                                hunts and rope courses to carousel rides and animal
-                                experiences, we offer a number of attractions for visitors
-                                of all ages. Check below for details on what's currently
-                                open.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
-                                How to Select Ticket plan?
-                              </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                              <div class="accordion-body">
-                                Experience the Zoo like never before with our NEW Nature
-                                Blazer scavenger hunt! Navigate our exhibits with a smart
-                                compass, completing challenges and answering trivia
-                                questions at each stop through an interactive mobile app
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
-                                Can I rent a stroller or wheelchair
-                              </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                              <div class="accordion-body">
-                                Make your viserlife Zoo visit memorable! From scavenger
-                                hunts and rope courses to carousel rides and animal
-                                experiences, we offer a number of attractions for visitors
-                                of all ages. Check below for details on what's currently
-                                open.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                      <div class="accordion custom--accordion custom--accordion-alt" id="faqAccordion2">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false">
-                            Do chaperones teachers receive free entry?
-                            </button>
-                          </h2>
-                          <div id="collapseOne2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
-                            <div class="accordion-body">
-                              For every 10 student tickets purchased, you will receive one complimentary ticket for a chaperone. Additional chaperone tickets should be purchased in advance of your trip and will be eligible for the group rate. Chaperones must be 21 years of age or older.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false">
-                            How much is bus parking ?
-                            </button>
-                          </h2>
-                          <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
-                            <div class="accordion-body">
-                              Buses will be directed to park along 34th Street, south of the entrance to Tiger Lot. Buses park for free, and bus drivers are admitted to the Zoo for free with proper ID. Anyone traveling in their own vehicle will need to pay for parking in any of our open lots.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false">
-                            Are we allowed to bring lunches? 
-                            </button>
-                          </h2>
-                          <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
-                            <div class="accordion-body">
-                              You are permitted to bring your own lunches and eat freely at any of our available picnic areas, no reservations required. Please note that we do not have storage for lunches. You may leave and re-enter the Zoo if you choose to store lunches on your bus.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false">
-                            Are masks required?
-                            </button>
-                          </h2>
-                          <div id="collapseFour2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
-                            <div class="accordion-body">
-                              While inside any building and in designated exhibits at the Zoo, all guests over the age of 2 must wear a mask, face covering, or face shield for the safety of our guests, staff, and animals. We recommend all guests bring a face mask. Guests who are fully vaccinated will be permitted to be without face coverings in outdoor locations.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2" aria-expanded="false">
-                            Are guided tours available?
-                            </button>
-                          </h2>
-                          <div id="collapseFive2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
-                            <div class="accordion-body">
-                              We are not currently offering guided group tours.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h3 class="mt-0 mb-4">Related Event</h3>
-                <div class="row g-4 justify-content-center">
-                  <div class="col-md-6 col-lg-4">
-                    <div class="blog-post">
-                      <img src="./Assets/gallery/animal/blog-post-1.png" alt="image" class="blog-post__img">
-                      <div class="blog-post__overlay">
-                        <div class="blog-post__date">
-                          <div class="blog-post__date-content">
-                            <h5 class="mt-0 mb-1 text-center text--white">10</h5>
-                            <h6 class="m-0 text-center text--white">MAY</h6>
-                          </div>
-                        </div>
-                        <div class="blog-post__content">
-                          <h5 class="blog-post__title">
-                            <a class="t-link blog-post__title-link">
-                              The chameleon is a species of chameleon found
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="blog-post">
-                      <img src="./Assets/gallery/animal/blog-post-2.png" alt="image" class="blog-post__img">
-                      <div class="blog-post__overlay">
-                        <div class="blog-post__date">
-                          <div class="blog-post__date-content">
-                            <h5 class="mt-0 mb-1 text-center text--white">10</h5>
-                            <h6 class="m-0 text-center text--white">MAY</h6>
-                          </div>
-                        </div>
-                        <div class="blog-post__content">
-                          <h5 class="blog-post__title">
-                            <a class="t-link blog-post__title-link">
-                              Explore the Animal Enclosures closely
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4">
-                    <div class="blog-post">
-                      <img src="./Assets/gallery/animal/blog-post-3.png" alt="image" class="blog-post__img">
-                      <div class="blog-post__overlay">
-                        <div class="blog-post__date">
-                          <div class="blog-post__date-content">
-                            <h5 class="mt-0 mb-1 text-center text--white">10</h5>
-                            <h6 class="m-0 text-center text--white">MAY</h6>
-                          </div>
-                        </div>
-                        <div class="blog-post__content">
-                          <h5 class="blog-post__title">
-                            <a class="t-link blog-post__title-link">
-                              Do a Safari or Flower Arrangement in viserlife
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <ul class="list" style="--gap: 1.5rem">
-                  <li>
-                    <div class="member-card">
-                      <img src="./Assets/gallery/animal/member-card-1.png" alt="image" class="member-card__img">
-                      <div class="member-card__content align-items-start">
-                        <h5 class="membership-card__title mb-2 text--white">Premium</h5>
-                        <h4 class="membership-card__price mt-2">$108.59</h4>
-                        <ul class="list list--base" style="--gap: 0.5rem">
-                          <li class="text--white">20% Dsicount All Event</li>
-                          <li class="text--white">Allow 2 adult person</li>
-                        </ul>
-                        <a class="btn btn--md btn--base mt-4">Buy Ticket</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="widget">
-                      <h5 class="widget__title">Upcoming Event</h5>
-                      <ul class="list" style="--gap: 1rem">
-                        <li>
-                          <div class="list list--row">
-                            <div class="user user--md">
-                              <img src="./Assets/gallery/feedback images/people-3.jpg" alt="image" class="user__img">
-                            </div>
-                            <div class="list flex-grow-1" style="--gap: 0.2rem">
-                              <h6 class="m-0">
-                                <a class="t-link heading-clr t-link--base">
-                                  Member Morning Strolls
-                                </a>
-                              </h6>
-                              <ul class="list list--row" style="--gap: 1rem">
-                                <li>
-                                  <a class="t-link t-link--base text-clr sm-text">
-                                    28 May 2021
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="t-link t-link--base text-clr sm-text">
-                                    Viserlife
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="list list--row">
-                            <div class="user user--md">
-                              <img src="./Assets/gallery/feedback images/people-4.jpg" alt="image" class="user__img">
-                            </div>
-                            <div class="list flex-grow-1" style="--gap: 0.2rem">
-                              <h6 class="m-0">
-                                <a class="t-link heading-clr t-link--base">
-                                  Member Evenings
-                                </a>
-                              </h6>
-                              <ul class="list list--row" style="--gap: 1rem">
-                                <li>
-                                  <a class="t-link t-link--base text-clr sm-text">
-                                    28 May 2021
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="t-link t-link--base text-clr sm-text">
-                                    Viserlife
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="list list--row">
-                            <div class="user user--md">
-                              <img src="./Assets/gallery/feedback images/people-5.jpg" alt="image" class="user__img">
-                            </div>
-                            <div class="list flex-grow-1" style="--gap: 0.2rem">
-                              <h6 class="m-0">
-                                <a class="t-link heading-clr t-link--base">
-                                  Calling all early birds
-                                </a>
-                              </h6>
-                              <ul class="list list--row" style="--gap: 1rem">
-                                <li>
-                                  <a class="t-link t-link--base text-clr sm-text">
-                                    28 May 2021
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="t-link t-link--base text-clr sm-text">
-                                    Viserlife
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <a class="t-link btn btn--xxl btn--base w-100 text-uppercase">
-                      download pdf
-                    </a>
-                  </li>
-                  <li>
-                    <div class="widget">
-                      <h5 class="mt-0">Includes:</h5>
-                      <ul class="list list--base" style="--gap: 0.5rem">
-                        <li>
-                          <span class="d-block text-clr text-capitalize">
-                            car parking
-                          </span>
-                        </li>
-                        <li>
-                          <span class="d-block text-clr text-capitalize">
-                            Photo with animals
-                          </span>
-                        </li>
-                        <li>
-                          <span class="d-block text-clr text-capitalize">
-                            Zoo Shopping
-                          </span>
-                        </li>
-                        <li>
-                          <span class="d-block text-clr text-capitalize">
-                            a guided services
-                          </span>
-                        </li>
-                        <li>
-                          <span class="d-block text-clr text-capitalize">
-                            Food &amp; beverage
-                          </span>
-                        </li>
-                        <li>
-                          <span class="d-block text-clr text-capitalize">
-                            Save Animals
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
+              <div class="col-xl-6">
+                <h5 class="mt-xl-0">Join Us To Enjoy:</h5>
+                <ul class="list list--base">
+                  <li>More than one million bright and dazzling tree !</li>
+                  <li>A brand new 26 foot tall LED holiday tree</li>
+                  <li>Animal Appearances</li>
+                  <li>Letters to Santa</li>
+                  <li>Hot chocolate and cookies</li>
+                  <li>Snowman's River Boat Rides</li>
+                  <li>Holiday Shopping at the Gift Shop</li>
                 </ul>
               </div>
             </div>
+            <p class="mt-5">
+              Become a member today and take advantage of exclusive members-only
+              events like this one, plus enjoy free admission, free parking, and
+              discounts on retail and dining. Membership pays for itself in two
+              visits!
+            </p>
+            <p class="mb-5">
+              With an impressive crop of regional craft brews, Summer Ale Festival has much to offer the beer
+              enthusiast. This year, guests can enjoy more than 100 award-winning seasonal craft beers and fresh, local
+              fare from the region’s food trucks.
+            </p>
+            <div class="table-responsive--md">
+              <table class="table custom--table">
+                <thead>
+                  <tr>
+                    <th>Date &amp; Time</th>
+                    <th>Theme</th>
+                    <th>Activity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Amount">
+                      <span class="d-block sm-text">
+                        November 26 &amp; 27 at 08:30pm
+                      </span>
+                    </td>
+                    <td data-label="Currency">Wild Works Ropes Course</td>
+                    <td data-label="Deposit">
+                      The Zoo’s high-flying WildWorks ropes course is an
+                      ultra-exhilarating experience for both adults and littles
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Amount">December 5 at 08:30pm</td>
+                    <td data-label="Currency">Become a Philly Zoo Nature Blazer</td>
+                    <td data-label="Deposit">
+                      Experience the Zoo like never before with our NEW Nature
+                      Blazer scavenger hunt! Navigate our exhibits with a smart
+                      compass, completing challenges and answering trivia questions
+                      at each stop through an interactive mobile app.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Amount">May 16 at 08:30</td>
+                    <td data-label="Currency">Adventure at Everytime</td>
+                    <td data-label="Deposit">
+                      Make your viserlife Zoo visit memorable! From scavenger hunts
+                      and rope courses to carousel rides and animal experiences, we
+                      offer a number of attractions for visitors of all ages. Check
+                      below for details on what's currently open.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-label="Amount">November 26 &amp; 27 at 08:30pm</td>
+                    <td data-label="Currency">
+                      <strong>Degital 3D animation</strong> ligula mi congue ismodn
+                      ligula urna.
+                    </td>
+                    <td data-label="Deposit">
+                      WildWorks ropes course is an ultra-exhilarating experience for
+                      both adults and littles
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="section--sm">
+              <div class="row g-4 justify-content-center justify-content-lg-start">
+                <div class="col-md-7 col-lg-10">
+                  <div class="text-center text-lg-start pe-xxl-4">
+                    <h2 class="mt-0">What`s you want to know about event</h2>
+                    <p class="section__para mx-auto ms-lg-0 mb-0">
+                      WildWorks ropes course is an ultra-exhilarating experience for
+                      both adults and littles
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="accordion custom--accordion custom--accordion-alt" id="faqAccordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="false">
+                          Why Viserlife?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          A world where humans and animals coexist in harmony—that's
+                          our vision. By supporting the Zoo, you can help us bring it
+                          to life.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false">
+                          How to buy ticket in online?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Viserlife Zoo is open daily from 9:30 am-5 pm. All guests,
+                          including members, must make advance online reservations.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false">
+                          Upcoming Animals?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Make your Viserlife Zoo visit memorable! From scavenger
+                          hunts and rope courses to carousel rides and animal
+                          experiences, we offer a number of attractions for visitors
+                          of all ages. Check below for details on what's currently
+                          open.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false">
+                          How to Select Ticket plan?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Experience the Zoo like never before with our NEW Nature
+                          Blazer scavenger hunt! Navigate our exhibits with a smart
+                          compass, completing challenges and answering trivia
+                          questions at each stop through an interactive mobile app
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive" aria-expanded="false">
+                          Can I rent a stroller or wheelchair
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          Make your viserlife Zoo visit memorable! From scavenger
+                          hunts and rope courses to carousel rides and animal
+                          experiences, we offer a number of attractions for visitors
+                          of all ages. Check below for details on what's currently
+                          open.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6">
+                  <div class="accordion custom--accordion custom--accordion-alt" id="faqAccordion2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne2" aria-expanded="false">
+                          Do chaperones teachers receive free entry?
+                        </button>
+                      </h2>
+                      <div id="collapseOne2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                        <div class="accordion-body">
+                          For every 10 student tickets purchased, you will receive one complimentary ticket for a
+                          chaperone. Additional chaperone tickets should be purchased in advance of your trip and will
+                          be eligible for the group rate. Chaperones must be 21 years of age or older.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo2" aria-expanded="false">
+                          How much is bus parking ?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                        <div class="accordion-body">
+                          Buses will be directed to park along 34th Street, south of the entrance to Tiger Lot. Buses
+                          park for free, and bus drivers are admitted to the Zoo for free with proper ID. Anyone
+                          traveling in their own vehicle will need to pay for parking in any of our open lots.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree2" aria-expanded="false">
+                          Are we allowed to bring lunches?
+                        </button>
+                      </h2>
+                      <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                        <div class="accordion-body">
+                          You are permitted to bring your own lunches and eat freely at any of our available picnic
+                          areas, no reservations required. Please note that we do not have storage for lunches. You may
+                          leave and re-enter the Zoo if you choose to store lunches on your bus.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour2" aria-expanded="false">
+                          Are masks required?
+                        </button>
+                      </h2>
+                      <div id="collapseFour2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                        <div class="accordion-body">
+                          While inside any building and in designated exhibits at the Zoo, all guests over the age of 2
+                          must wear a mask, face covering, or face shield for the safety of our guests, staff, and
+                          animals. We recommend all guests bring a face mask. Guests who are fully vaccinated will be
+                          permitted to be without face coverings in outdoor locations.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive2" aria-expanded="false">
+                          Are guided tours available?
+                        </button>
+                      </h2>
+                      <div id="collapseFive2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                        <div class="accordion-body">
+                          We are not currently offering guided group tours.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-0 mb-4">Related Event</h3>
+            <div class="row g-4 justify-content-center">
+              <div class="col-md-6 col-lg-4">
+                <div class="blog-post">
+                  <img src="./Assets/gallery/animal/blog-post-1.png" alt="image" class="blog-post__img">
+                  <div class="blog-post__overlay">
+                    <div class="blog-post__date">
+                      <div class="blog-post__date-content">
+                        <h5 class="mt-0 mb-1 text-center text--white">10</h5>
+                        <h6 class="m-0 text-center text--white">MAY</h6>
+                      </div>
+                    </div>
+                    <div class="blog-post__content">
+                      <h5 class="blog-post__title">
+                        <a class="t-link blog-post__title-link">
+                          The chameleon is a species of chameleon found
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="blog-post">
+                  <img src="./Assets/gallery/animal/blog-post-2.png" alt="image" class="blog-post__img">
+                  <div class="blog-post__overlay">
+                    <div class="blog-post__date">
+                      <div class="blog-post__date-content">
+                        <h5 class="mt-0 mb-1 text-center text--white">10</h5>
+                        <h6 class="m-0 text-center text--white">MAY</h6>
+                      </div>
+                    </div>
+                    <div class="blog-post__content">
+                      <h5 class="blog-post__title">
+                        <a class="t-link blog-post__title-link">
+                          Explore the Animal Enclosures closely
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="blog-post">
+                  <img src="./Assets/gallery/animal/blog-post-3.png" alt="image" class="blog-post__img">
+                  <div class="blog-post__overlay">
+                    <div class="blog-post__date">
+                      <div class="blog-post__date-content">
+                        <h5 class="mt-0 mb-1 text-center text--white">10</h5>
+                        <h6 class="m-0 text-center text--white">MAY</h6>
+                      </div>
+                    </div>
+                    <div class="blog-post__content">
+                      <h5 class="blog-post__title">
+                        <a class="t-link blog-post__title-link">
+                          Do a Safari or Flower Arrangement in viserlife
+                        </a>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="col-lg-4">
+            <ul class="list" style="--gap: 1.5rem">
+              <li>
+                <div class="member-card">
+                  <img src="./Assets/gallery/animal/member-card-1.png" alt="image" class="member-card__img">
+                  <div class="member-card__content align-items-start">
+                    <h5 class="membership-card__title mb-2 text--white">Premium</h5>
+                    <h4 class="membership-card__price mt-2">$108.59</h4>
+                    <ul class="list list--base" style="--gap: 0.5rem">
+                      <li class="text--white">20% Dsicount All Event</li>
+                      <li class="text--white">Allow 2 adult person</li>
+                    </ul>
+                    <a class="btn btn--md btn--base mt-4">Buy Ticket</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="widget">
+                  <h5 class="widget__title">Upcoming Event</h5>
+                  <ul class="list" style="--gap: 1rem">
+                    <li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-3.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a class="t-link heading-clr t-link--base">
+                              Member Morning Strolls
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-4.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a class="t-link heading-clr t-link--base">
+                              Member Evenings
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="list list--row">
+                        <div class="user user--md">
+                          <img src="./Assets/gallery/feedback images/people-5.jpg" alt="image" class="user__img">
+                        </div>
+                        <div class="list flex-grow-1" style="--gap: 0.2rem">
+                          <h6 class="m-0">
+                            <a class="t-link heading-clr t-link--base">
+                              Calling all early birds
+                            </a>
+                          </h6>
+                          <ul class="list list--row" style="--gap: 1rem">
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                28 May 2021
+                              </a>
+                            </li>
+                            <li>
+                              <a class="t-link t-link--base text-clr sm-text">
+                                Viserlife
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./Karachi Safari Park.pdf" download="Karachi Safari Park"
+                  class="t-link btn btn--xxl btn--base w-100 text-uppercase">
+                  download pdf
+                </a>
+              </li>
+              <li>
+                <div class="widget">
+                  <h5 class="mt-0">Includes:</h5>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <span class="d-block text-clr text-capitalize">
+                        car parking
+                      </span>
+                    </li>
+                    <li>
+                      <span class="d-block text-clr text-capitalize">
+                        Photo with animals
+                      </span>
+                    </li>
+                    <li>
+                      <span class="d-block text-clr text-capitalize">
+                        Zoo Shopping
+                      </span>
+                    </li>
+                    <li>
+                      <span class="d-block text-clr text-capitalize">
+                        a guided services
+                      </span>
+                    </li>
+                    <li>
+                      <span class="d-block text-clr text-capitalize">
+                        Food &amp; beverage
+                      </span>
+                    </li>
+                    <li>
+                      <span class="d-block text-clr text-capitalize">
+                        Save Animals
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="client-slider">
-        <div class="container mt-5 pt-5">
-            <div class="row g-4 g-sm-0 justify-content-center">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="client-card">
-                        <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="image" class="client-card__img">
-                    </div>
-                </div>
+      <div class="container mt-5 pt-5">
+        <div class="row g-4 g-sm-0 justify-content-center">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-1-removebg-preview.png" alt="image" class="client-card__img">
             </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-2-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-3-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-4-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-5-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-6-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-7-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="client-card">
+              <img src="./Assets/client-slider/client-8-removebg-preview.png" alt="image" class="client-card__img">
+            </div>
+          </div>
         </div>
-     </section>
-    
-    
+      </div>
+    </section>
     <section id="footer"></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/footer.js"></script>
+  </section>
+
+  <div id="noInternetPage" style="display: none;">
+    <h1>No Internet Connection</h1>
+    <p>Please check your internet connection and try again.</p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/footer.js"></script>
 </body>
+
 </html>

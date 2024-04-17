@@ -30,7 +30,7 @@
     .bg-image {
       position: relative;
       width: 100%;
-      height: 90vh;
+      height: 60vh;
       background-image: url(./Assets/gallery/slider/slider-1.jpg);
       background-position: center;
       background-repeat: no-repeat;
@@ -44,14 +44,24 @@
 
     .overlay {
       position: absolute;
-      top: 30%;
       width: 998px;
       max-width: 100%;
+      top: 50%;
       left: 50%;
       transform: translateX(-50%);
       font-family: 'Lilita One', sans-serif;
     }
 
+    .overlay1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: #080d15;
+      opacity: .7;
+    }
+
+    /* Loader ki CSS styling */
     #loader {
       position: fixed;
       left: 0;
@@ -102,89 +112,35 @@
     #noInternetPage {
       background-color: #f2f2f2;
     }
-
-    h1 {
-      font-family: 'Lilita One', sans-serif;
-
-    }
-    h3 {
-      font-size: 1.5rem;
-      color: #86C305;
-    }
-
-    h1 {
-      font-size: 5rem;
-      color: #f2f2f2;
-    }
-
-    @media (min-width:0px) and (max-width:993px) {
-      .hgroup {
-        position: relative;
-        top: 30px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hgroup {
-        margin-top: 60px;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-      }
-
-      h3 {
-        font-size: 1.2rem;
-      }
-    }
-
-    @media (min-width: 0px) and (max-width: 480px) {
-      .hgroup {
-        margin-top: 100px;
-      }
-
-      h1 {
-        font-size: 3rem;
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-    }
   </style>
   <script>
     window.addEventListener("load", function () {
       var loader = document.getElementById("loader");
-      loader.style.display = "none"; 
+      loader.style.display = "none";
     });
   </script>
 </head>
 
 <body>
-  <!-- Loader -->
   <section id="internetPage">
     <div id="loader">
-      <div class="loader-circle"></div> <!-- Loader ka shape -->
+      <div class="loader-circle"></div>
     </div>
 
     <section id="navbar">
       <!-- Your navbar content goes here -->
     </section>
-    <section class="bg-image">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center"> 
-            <div class="hgroup  mt-5">
-              <hgroup>
-                <h3 class="text-#f39c12">WELCOME TO NATIONAL PARK PORTAL</h3>  
-                <h1 class="text-capitalize" style="color: white;">Let’s Explore <br> our wildlife <br> animals</h1>
-              </hgroup>
+    <section class="bg-image " style="box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <div class=" overlay1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 overlay">
+              <p class="text-capitalize text-white display-4">jheel in Karachi</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
     <section>
       <div class="container">
         <div class="row">
@@ -251,13 +207,13 @@
           <div class="col-md-10 col-xl-6">
             <div class="text-center text-xl-start">
               <span class="section__particles">
-                <span class="section__subtitle"> Welcome to Safari Park </span>
+                <span class="section__subtitle"> Welcome to jheel Park </span>
               </span>
               <h2 class="section__title">
-                Why You Should Visit <span> Safari Park</span>
+                Why You Should Visit <span> jheel Park</span>
               </h2>
               <p class="section__para mx-auto ms-xl-0 mb-5">
-                Safari park Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for all
+                jheel park Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for all
                 guests.
                 We look forward to seeing you!
               </p>
@@ -287,7 +243,7 @@
                   <div class="welcome-card__content">
                     <h5 class="mt-xl-0 text-center text-xl-start">Supper Eviorment</h5>
                     <p class="mb-0 text-center text-xl-start">
-                      Safari park Zoo is located at the corner of 34th Street and Girard Avenue in historic Fairmount
+                      jheel park Zoo is located at the corner of 34th Street and Girard Avenue in historic Fairmount
                       Park.
                     </p>
                   </div>
@@ -497,7 +453,7 @@
                 <span class="section__subtitle"> FAQ </span>
               </span>
               <h2 class="section__title">
-                What`s you know about <span>Safari park</span>
+                What`s you know about <span>jheel park</span>
               </h2>
               <p class="section__para mx-auto ms-xl-0 mb-5">
                 Need help with your science homework? Wondering about what our scientists do at the Zoo?
@@ -570,7 +526,7 @@
                   <span class="section__subtitle section__subtitle-dash"> Membership Plan </span>
                 </span>
                 <h2 class="section__title">
-                  You can be a proud member of <span>Safari park</span>
+                  You can be a proud member of <span>jheel park</span>
                 </h2>
                 <p class="section__para mx-auto mb-0">
                   More than admission, events and parking. Each membership directly supports the care of Viserlife Zoo
@@ -992,10 +948,10 @@
           <div class="col-md-10 col-lg-6">
             <div class="text-center text-lg-start pe-xl-5">
               <span class="section__subtitle section__subtitle-alt">
-                Why Visit Safari park
+                Why Visit jheel park
               </span>
               <h2 class="section__title">
-                Why You Should Visit <span class="fw-regular">Safari park </span>
+                Why You Should Visit <span class="fw-regular">jheel park </span>
               </h2>
               <p class="section__para mx-auto ms-lg-0 mb-5">
                 Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten
@@ -1439,98 +1395,107 @@
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/animal-19621_640.jpg" alt="image" class="blog-post__img">
-              
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-1.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-2.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-3.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-4.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-5.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
-          
-          
+
+
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.45.13 AM (1).jpeg" alt="image" class="blog-post__img">
-               
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (2).jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.45.13 AM (1).jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.18.08 AM.jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (2).jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.57.08 AM.jpeg" alt="image" class="blog-post__img">
-               
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-4">
-            <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM.jpeg" alt="image" class="blog-post__img">
-               
-            </div>
-          </div>
-         
-          <div class="col-md-6 col-lg-4">
-            <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (1).jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.18.08 AM.jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.22 AM.jpeg" alt="image" class="blog-post__img">
-              
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.57.08 AM.jpeg" alt="image"
+                class="blog-post__img">
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM.jpeg" alt="image"
+                class="blog-post__img">
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (1).jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.02.25 PM.jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.22 AM.jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.21 AM.jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.02.25 PM.jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
-          
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.21 AM.jpeg" alt="image"
+                class="blog-post__img">
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1709,6 +1674,7 @@
           </div>
         </div>
     </section>
+    <!-- cart -->
     <section class="cart">
       <div class="container mt-5 pt-5">
         <div class="row g-4 g-sm-0 justify-content-center">

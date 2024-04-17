@@ -30,8 +30,8 @@
     .bg-image {
       position: relative;
       width: 100%;
-      height: 90vh;
-      background-image: url(./Assets/gallery/slider/slider-1.jpg);
+      height: 70vh;
+      background-image: url(./Assets/banner-2.jpg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -44,14 +44,22 @@
 
     .overlay {
       position: absolute;
-      top: 30%;
       width: 998px;
+      /* Set width to 998px */
       max-width: 100%;
+      /* Ensure it's responsive */
       left: 50%;
+      /* Move the element to the center horizontally */
       transform: translateX(-50%);
+      /* Adjust position to center */
       font-family: 'Lilita One', sans-serif;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+
     }
 
+    .overlay p {}
+
+    /* Loader ki CSS styling */
     #loader {
       position: fixed;
       left: 0;
@@ -59,19 +67,25 @@
       width: 100%;
       height: 100%;
       background-color: rgba(255, 255, 255, 0.7);
+      /* Halka sa opaque white background */
       z-index: 9999;
+      /* Loader ko dusre elements ke upar rakhne ke liye */
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    /* Loader ki shape aur animation */
     .loader-circle {
       border: 8px solid #f3f3f3;
+      /* Light grey color */
       border-top: 8px solid rgb(134 195 5);
+      /* Blue color */
       border-radius: 50%;
       width: 100px;
       height: 100px;
       animation: spin 2s linear infinite;
+      /* Spin animation, 2 seconds */
     }
 
     @keyframes spin {
@@ -92,6 +106,7 @@
     #internetPage,
     #noInternetPage {
       text-align: center;
+      /* padding: 20px; */
     }
 
     #internetPage h1,
@@ -102,60 +117,12 @@
     #noInternetPage {
       background-color: #f2f2f2;
     }
-
-    h1 {
-      font-family: 'Lilita One', sans-serif;
-
-    }
-    h3 {
-      font-size: 1.5rem;
-      color: #86C305;
-    }
-
-    h1 {
-      font-size: 5rem;
-      color: #f2f2f2;
-    }
-
-    @media (min-width:0px) and (max-width:993px) {
-      .hgroup {
-        position: relative;
-        top: 30px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .hgroup {
-        margin-top: 60px;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-      }
-
-      h3 {
-        font-size: 1.2rem;
-      }
-    }
-
-    @media (min-width: 0px) and (max-width: 480px) {
-      .hgroup {
-        margin-top: 100px;
-      }
-
-      h1 {
-        font-size: 3rem;
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-    }
   </style>
   <script>
+    // JavaScript code to show the loader when the page starts loading
     window.addEventListener("load", function () {
       var loader = document.getElementById("loader");
-      loader.style.display = "none"; 
+      loader.style.display = "none"; // Hide the loader when the page is fully loaded
     });
   </script>
 </head>
@@ -173,18 +140,12 @@
     <section class="bg-image">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center"> 
-            <div class="hgroup  mt-5">
-              <hgroup>
-                <h3 class="text-#f39c12">WELCOME TO NATIONAL PARK PORTAL</h3>  
-                <h1 class="text-capitalize" style="color: white;">Let’s Explore <br> our wildlife <br> animals</h1>
-              </hgroup>
-            </div>
+          <div class="col-lg-12 overlay"> <!-- Adjusted the column to take full width -->
+            <p class="text-capitalize text-white display-4">Hill Park in Karachi</p>
           </div>
         </div>
       </div>
     </section>
-    
     <section>
       <div class="container">
         <div class="row">
@@ -251,13 +212,13 @@
           <div class="col-md-10 col-xl-6">
             <div class="text-center text-xl-start">
               <span class="section__particles">
-                <span class="section__subtitle"> Welcome to Safari Park </span>
+                <span class="section__subtitle"> Welcome to Hill Park </span>
               </span>
               <h2 class="section__title">
-                Why You Should Visit <span> Safari Park</span>
+                Why You Should Visit <span> Hill Park</span>
               </h2>
               <p class="section__para mx-auto ms-xl-0 mb-5">
-                Safari park Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for all
+                Hill park Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for all
                 guests.
                 We look forward to seeing you!
               </p>
@@ -497,7 +458,7 @@
                 <span class="section__subtitle"> FAQ </span>
               </span>
               <h2 class="section__title">
-                What`s you know about <span>Safari park</span>
+                What`s you know about <span>Hill park</span>
               </h2>
               <p class="section__para mx-auto ms-xl-0 mb-5">
                 Need help with your science homework? Wondering about what our scientists do at the Zoo?
@@ -570,7 +531,7 @@
                   <span class="section__subtitle section__subtitle-dash"> Membership Plan </span>
                 </span>
                 <h2 class="section__title">
-                  You can be a proud member of <span>Safari park</span>
+                  You can be a proud member of <span>Hill park</span>
                 </h2>
                 <p class="section__para mx-auto mb-0">
                   More than admission, events and parking. Each membership directly supports the care of Viserlife Zoo
@@ -992,10 +953,10 @@
           <div class="col-md-10 col-lg-6">
             <div class="text-center text-lg-start pe-xl-5">
               <span class="section__subtitle section__subtitle-alt">
-                Why Visit Safari park
+                Why Visit Hill park
               </span>
               <h2 class="section__title">
-                Why You Should Visit <span class="fw-regular">Safari park </span>
+                Why You Should Visit <span class="fw-regular">Hill park </span>
               </h2>
               <p class="section__para mx-auto ms-lg-0 mb-5">
                 Connect with our animals, then connect with a bigger mission. Learn more about how we work to enlighten
@@ -1010,7 +971,7 @@
                     <div class="about-card__content text-md-start">
                       <h5 class="mt-0">Animlas exhibition</h5>
                       <p class="t-short-para mb-0">
-                        Safari park Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for
+                        Hill park Zoo is now open daily from 9:30 am–5 pm. Advance timed reservations are required for
                         all
                         guests. We look forward to seeing you!
                       </p>
@@ -1070,8 +1031,7 @@
                 Animal exhibition for <span>kid`s visitor</span>
               </h2>
               <p class="section__para mx-auto ms-lg-0">
-                Safaripark Zoo’s 42-acre campus is filled with a variety of animal exhibits, each designed to provide
-                you
+                Hill park Zoo’s 42-acre campus is filled with a variety of animal exhibits, each designed to provide you
                 and your family with an up close and personal experience.
               </p>
               <ul class="list list--exhibition text-start">
@@ -1439,98 +1399,107 @@
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/animal-19621_640.jpg" alt="image" class="blog-post__img">
-              
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-1.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-2.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-3.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-4.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
               <img src="./Assets/gallery/galleryImages/gallery-5.jpg" alt="image" class="blog-post__img">
-               
+
             </div>
           </div>
-          
-          
+
+
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.45.13 AM (1).jpeg" alt="image" class="blog-post__img">
-               
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (2).jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.45.13 AM (1).jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.18.08 AM.jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (2).jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.57.08 AM.jpeg" alt="image" class="blog-post__img">
-               
-            </div>
-          </div>
-          
-          <div class="col-md-6 col-lg-4">
-            <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM.jpeg" alt="image" class="blog-post__img">
-               
-            </div>
-          </div>
-         
-          <div class="col-md-6 col-lg-4">
-            <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (1).jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.18.08 AM.jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.22 AM.jpeg" alt="image" class="blog-post__img">
-              
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.57.08 AM.jpeg" alt="image"
+                class="blog-post__img">
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM.jpeg" alt="image"
+                class="blog-post__img">
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (1).jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.02.25 PM.jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.22 AM.jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
             <div class="blog-post">
-              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.21 AM.jpeg" alt="image" class="blog-post__img">
-               
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.02.25 PM.jpeg" alt="image"
+                class="blog-post__img">
+
             </div>
           </div>
-          
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-post">
+              <img src="./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.21 AM.jpeg" alt="image"
+                class="blog-post__img">
+
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

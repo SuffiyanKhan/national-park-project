@@ -1,4 +1,4 @@
-    function checkInternetConnection() {
+function checkInternetConnection() {
     return navigator.onLine;
 }
 

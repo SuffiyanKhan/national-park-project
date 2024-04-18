@@ -16,10 +16,10 @@ document.querySelector("#navbar").innerHTML = `
           <a class="nav-link text-light text-capitalize fw-semibold" href="./about.html">about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-capitalize fw-semibold" href="./contact.html">contact</a>
+          <a class="nav-link text-light text-capitalize fw-semibold" href="./faq.html">FAQ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-capitalize fw-semibold" href="./faq.html">FAQ</a>
+          <a class="nav-link text-light text-capitalize fw-semibold" href="./contact.html">contact</a>
         </li>
         <li class="nav-item dropdown">
         <a class="nav-link text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,12 +48,3 @@ document.querySelector("#navbar").innerHTML = `
 </nav>
 
 // `
-// let nav = document.querySelector('.navigation-wrap');
-// window.onscroll = ()=>{
-// if(document.documentElement.scrollTop > 20){
-// nav.classList.add('scroll-on')
-// }else{
-// nav.classList.remove('scroll-on')
-
-// }
-// }

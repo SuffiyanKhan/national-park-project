@@ -5,196 +5,200 @@
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis. Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum. Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/gallery-1.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/page-title.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?deer",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/deer.pdf"
         },{
             "name": "wolf",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/gallery-2.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/gallery-27.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?wolf",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows,"
+            "diet" : "Deer Species, Pigs, Cows,",
+            "download": "pdf/wolf.pdf"
         },{
             "name": "elephant",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/gallery-3.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/gallery-26.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?elephant",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/ele.pdf"
         },{
             "name": "girrafe",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/gallery-4.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/gallery-28.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?girrafe",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/graf.pdf"
         },{
             "name": "monkey",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/gallery-5.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/gallery-29.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?monkey",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/monkey.pdf"
         },{
             "name": "cheeta",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/animal-19621_640.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/gallery-30.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?cheeta",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/cheeta.pdf"
 
         },{
             "name": "rufous",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.21 AM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/WhatsApp%20Image%202023-11-22%20at%201.16.39%20PM.jpeg",
+            "thumnail" : "https://source.unsplash.com/626x626/?rufous",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/rufous.pdf"
         },{
             "name": "keel-billd toucan",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 11.55.22 AM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/WhatsApp%20Image%202023-11-22%20at%201.27.48%20PM.jpeg",
+            "thumnail" : "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-22 at 1.27.48 PM.jpeg",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/keel.pdf"
         },{
-            "name": "mangorove",
+            "name": "MANGROVE",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.02.25 PM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/gje6g66e.png",
+            "thumnail" : "./Assets/gallery/galleryImages/gje6g66e (1).png",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/mangrove.pdf"
         },{
             "name": "peafowl",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.09.22 PM (1).jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/6ss98fao.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?peafowl",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/peafowl.pdf"
         },{
             "name": "drongo",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
-            "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.09.22 PM.jpg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/wruf3hgm.png",
+            "image": "./Assets/gallery/galleryImages/abhishek-royal-ARBybIPjIx8-unsplash.jpg",
+            "thumnail" : "https://source.unsplash.com/626x626/?drongo",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/drogon.pdf"
         },{
             "name": "macaw",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-18 at 12.09.22 PM (2).jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/wruf3hgm.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?macaw",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/macwa.pdf"
         },{
             "name": "turtle",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/yvssuief.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?turtle",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/tutral.pdf"
         },{
             "name": "macroctopus",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.45.13 AM (1).jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/e9ffjdvk.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?octopus",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/macro.pdf"
         },{
             "name": "shark",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.18.08 AM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/oqnfzrnl.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?shark",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/shark.pdf"
         },{
             "name": "STALLION",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM (1).jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/4c3l4zqg.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?stallion",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/satallon.pdf"
         },{
             "name": "ZEBRA",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 9.57.08 AM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/WhatsApp%20Image%202023-11-22%20at%201.07.24%20PM.jpeg",
+            "thumnail" : "https://source.unsplash.com/626x626/?zebra",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/zebra.pdf"
         },{
             "name": "SQUIRREL",
             "title": "There are many type of variations pass not available",
             "description": "There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. There are not many of passages of lorem ipsum available alteration in some form. Donec scelerisque dolor id nunc dictum, interdum gravida. Sed malesuada quis tellus consequat posuere. Integer efficitur ut arcu ac placerat. Suspendisse pharetra justo et ante consectetur, non scelerisque enim imperdiet. Suspendisse aliquet congue facilisis. In varius neque at gravida posuere. Vivamus a enim quis nunc lacinia sagittis.Ut gravida felis vitae mauris suscipit, at facilisis mauris varius. Curabitur interdum malesuada vestibulum. Phasellus augue sapien, euismod ut pharetra ut, tincidunt non metus. Aliquam erat volutpat. Integer egestas maximus bibendum.Is your van a little old and tired when an unknown printer took.Lorem Ipsum is simply dummy text the leap into electronic typesetting.Has survived not only five centuries vitae mauris.",
             "image": "./Assets/gallery/galleryImages/WhatsApp Image 2023-11-20 at 10.10.04 AM.jpeg",
-            "thumnail" : "http://127.0.0.1:5500/code/complete%20website/catagery/maps/images/jzec6smn.png",
+            "thumnail" : "https://source.unsplash.com/626x626/?squirrel",
             "mass" : "90 – 310 kg",
             "speed" : "49 – 65 km/h",
             "lifespan" : "8 – 10 years ( in the wild )",
-            "diet" : "Deer Species, Pigs, Cows"
-
+            "diet" : "Deer Species, Pigs, Cows",
+            "download": "pdf/cheeta.pdf"
         }
     ]
 }

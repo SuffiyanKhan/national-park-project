@@ -126,7 +126,7 @@ document.querySelector("#footer").innerHTML = `
                     </a>
                   </li>
                   <li class="list--column__item">
-                    <a href="blog.html" class="t-link t-link--base text--white d-inline-block">
+                    <a href="blogs.html" class="t-link t-link--base text--white d-inline-block">
                       Blog
                     </a>
                   </li>

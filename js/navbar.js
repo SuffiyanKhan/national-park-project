@@ -1,5 +1,5 @@
 document.querySelector("#navbar").innerHTML = `
-<nav class="navbar navbar-expand-lg bg-dark fixed-top">
+<nav class="navbar fixed-top navbar-expand-sm " >
   <div class="container-fluid">
     <a class="navbar-brand ps-5" href="#">
       <img src="./Assets/logo.png" style="width: 90px;" class="img-fluid" alt="">
@@ -46,5 +46,16 @@ document.querySelector("#navbar").innerHTML = `
     </div>
   </div>
 </nav>
+ `
+document.onreadystatechange = function () {
+  let lastScrollPosition = 0;
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', function (e) {
+    lastScrollPosition = window.scrollY;
 
-// `
+    if (lastScrollPosition > 100)
+      navbar.classList.add('navbar-dark');
+    else
+      navbar.classList.remove('navbar-dark');
+  });
+} 

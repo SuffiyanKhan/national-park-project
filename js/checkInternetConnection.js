@@ -1,11 +1,9 @@
 function checkInternetConnection() {
     return navigator.onLine;
 }
-
-// Function to show/hide pages based on internet connection
 function togglePages() {
-    var internetPage = document.getElementById('internetPage');
-    var noInternetPage = document.getElementById('noInternetPage');
+    let internetPage = document.getElementById('internetPage');
+    let noInternetPage = document.getElementById('noInternetPage');
 
     if (checkInternetConnection()) {
         internetPage.style.display = 'block';
@@ -16,7 +14,6 @@ function togglePages() {
     }
 }
 
-// Check initially and add event listener for online/offline events
 togglePages();
 window.addEventListener('online', togglePages);
 window.addEventListener('offline', togglePages);

@@ -148,8 +148,8 @@ document.querySelector("#footer").innerHTML = `
                     </a>
                   </li>
                   <li class="list--column__item">
-                    <a href="animalDetalis.html" class="t-link t-link--base text--white d-inline-block">
-                    Animals Details
+                    <a href="gallery.html" class="t-link t-link--base text--white d-inline-block">
+                    Gallery
                     </a>
                   </li>
                   <li class="list--column__item">

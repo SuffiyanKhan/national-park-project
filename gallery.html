@@ -19,6 +19,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="./css/button.css">
     <title>Document</title>
 
     <style>
@@ -82,7 +83,6 @@
         #internetPage,
         #noInternetPage {
             text-align: center;
-            /* padding: 20px; */
         }
 
         #internetPage h1,
@@ -94,20 +94,13 @@
             background-color: #f2f2f2;
         }
     </style>
-    <script>
-        // JavaScript code to show the loader when the page starts loading
-        window.addEventListener("load", function () {
-            var loader = document.getElementById("loader");
-            loader.style.display = "none"; // Hide the loader when the page is fully loaded
-        });
-    </script>
+
 </head>
 
 <body>
     <section id="internetPage">
-        <!-- Loader -->
         <div id="loader">
-            <div class="loader-circle"></div> <!-- Loader ka shape -->
+            <div class="loader-circle"></div>
         </div>
         <section id="navbar"></section>
         <section class="bg-image">
@@ -122,45 +115,22 @@
             </div>
         </section>
         <section>
-            <div class="container">
-                <div class="row g-3 mt-5" id="imageRow">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/francesco-ZxNKxnR32Ng-unsplash.jpg" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/istockphoto-1165028488-1024x1024.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/istockphoto-1458215547-1024x1024.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/leon-pauleikhoff-98FC6SYw8ls-unsplash.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/mika-brandt-UlipBbZpweg-unsplash.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/istockphoto-1165028488-1024x1024.jpg" class="img-fluid"
-                            alt="">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <img src="./Assets/gallery/images/istockphoto-1457528151-1024x1024.jpg" class="img-fluid"
-                            alt="">
+            <div class="section__head mt-5 pt-5">
+                <div class="container">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-8 col-xl-6">
+                            <div class="text-center">
+                                <span class="section__particles">
+                                    <span class="section__subtitle section__subtitle-dash">Gallery</span>
+                                </span>
+                                <h2 class="section__title">New <span>Animals</span></h2>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="text-center mt-3">
-                    <button id="showMoreBtn" class="btn btn fw-semibold"
-                        style="background-color: rgb(134 195 5); color: white;">Show More</button>
+            </div>
+            <div class="container">
+                <div class="row g-4 gallery justify-content-center">
                 </div>
             </div>
         </section>
@@ -168,7 +138,7 @@
             <div class="container mt-5 ">
                 <div class="row">
                     <div class="col-12">
-                        <div class="slider d-flex justify-content-evenly">
+                        <div class="slide d-flex justify-content-evenly">
                             <div class="border d-flex justify-content-center align-items-center"
                                 style="height: 200px; width: 200px;"><img
                                     src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
@@ -208,82 +178,25 @@
     </div>
 
 
+    <script src="./js/footer.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/card.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
     "></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/footer.js"></script>
-    <!-- MDB -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Slick JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
+    <script src="./js/jQuerry.js"></script>
 
-        $(document).ready(function () {
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                prevArrow: $('.slick-prev'),
-                nextArrow: $('.slick-next'),
-                responsive: [
-                    {
-                        breakpoint: 1800, // Extra Large screen
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                            speed: 3000,
-                            cssEase: 'linear'
-                        }
-                    },
-                    {
-                        breakpoint: 1600, // Large screen
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            speed: 3000,
-                            cssEase: 'linear'
-                        }
-                    },
-                    {
-                        breakpoint: 766, // Medium screen
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480, // Small screen
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-            // Initially hide all images beyond the first six
-            $('#imageRow div:gt(5)').hide();
-
-            // Show more images when the button is clicked
-            $('#showMoreBtn').on('click', function () {
-                $('#imageRow div:hidden:lt(3)').fadeIn(500); // Change the number 3 to the number of additional images you want to show
-                // Hide the "Show More" button if there are no more hidden images
-                if ($('#imageRow div:hidden').length === 0) {
-                    $('#showMoreBtn').hide();
-                }
-            });
-        });
-    </script>
 
 </body>
 

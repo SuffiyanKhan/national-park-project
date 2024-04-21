@@ -1,5 +1,6 @@
 .button.button--wapasha {
-	background: rgb(134 195 5);
+	background: #86C305;
+	/* background: rgb(134 195 5); */
 	color: #fff;
 
 	-webkit-transition: background-color 0.3s, color 0.3s;

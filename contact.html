@@ -10,17 +10,12 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/index.css">
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css">
-    <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <!-- Slick theme CSS (optional) -->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <title>Document</title>
@@ -89,7 +84,6 @@
         #internetPage,
         #noInternetPage {
             text-align: center;
-            /* padding: 20px; */
         }
 
         #internetPage h1,
@@ -101,21 +95,14 @@
             background-color: #f2f2f2;
         }
     </style>
-    <script>
-        // JavaScript code to show the loader when the page starts loading
-        window.addEventListener("load", function () {
-            var loader = document.getElementById("loader");
-            loader.style.display = "none"; // Hide the loader when the page is fully loaded
-        });
-    </script>
+
 </head>
 
 <body>
 
     <section id="internetPage">
-        <!-- Loader -->
         <div id="loader">
-            <div class="loader-circle"></div> <!-- Loader ka shape -->
+            <div class="loader-circle"></div>
         </div>
         <section id="navbar"></section>
         <section class="bg-image">
@@ -189,7 +176,7 @@
             <div class="container mt-5 ">
                 <div class="row">
                     <div class="col-12">
-                        <div class="slider d-flex justify-content-evenly">
+                        <div class="slide d-flex justify-content-evenly">
                             <div class="border d-flex justify-content-center align-items-center"
                                 style="height: 200px; width: 200px;"><img
                                     src="./Assets/client-slider/client-1-removebg-preview.png" alt="Image 1"></div>
@@ -228,63 +215,20 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
-    "></script>
+
     <script src="./js/contact.js"></script>
     <script src="./js/navbar.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/loader.js"></script>
+    <script src="./js/checkInternetConnection.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                prevArrow: $('.slick-prev'),
-                nextArrow: $('.slick-next'),
-                responsive: [
-                    {
-                        breakpoint: 1800, // Extra Large screen
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                            speed: 3000,
-                            cssEase: 'linear'
-                        }
-                    },
-                    {
-                        breakpoint: 1600, // Large screen
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            speed: 3000,
-                            cssEase: 'linear'
-                        }
-                    },
-                    {
-                        breakpoint: 766, // Medium screen
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480, // Small screen
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });
-
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+        "></script>
+    <script src="./js/jQuerry.js"></script>
 </body>
 
 </html>

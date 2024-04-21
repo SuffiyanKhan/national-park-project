@@ -2,10 +2,9 @@
 
 
 .navbar {
-    height: 70px; /* Set the minimum height of the navbar */
+    height: 70px; 
     background-color: transparent;
   }
-  /* header design */
 .navigation-wrap{
   position: fixed;
   width: 100%;
@@ -15,27 +14,7 @@
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* .navigation-wrap .nav-item{
-  padding: 0 0.625rem;
-  transition: all 200ms linear;
-} */
-/* .navbar-toggler:focus{
-  outline: unset;
-  border: unset;
-  box-shadow: none;
-} */
-/* .nav-link{
-  font-size: 0.9375rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: var(--primary-color);
-  letter-spacing: 1px;
-}
-.navigation-wrap .main-btn{
-  padding: 0.3125rem 1.4375rem;
-  box-shadow: none;
-  margin-left: 0.625rem;
-} */
+
 .navigation-wrap.scroll-on{
   position: fixed;
   top: 0;
@@ -49,22 +28,12 @@
   
   @media (max-width: 991.98px) {
     .navbar {
-      height: auto; /* Change to auto height when navbar is collapsed */
+      height: auto; 
     }
   }
 
 
-  /* .navbar { */
-    /* background-color: rgba(0, 0, 0, 0) !important;
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-    transition-function: ease-in-out;
-  }
   
-  .navbar-dark {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-    color: #ffffff !important;
-  } */
   .navbar {
     background-color: rgba(0, 0, 0, 0) !important;
     border-bottom: none;  
@@ -81,4 +50,15 @@
   .navbar-collapse, .navbar-nav, .nav-item {
     color: inherit !important;
   }
+  .icon-color{
+    color: white;
+
+  }
   
+  .navbar-toggler{
+    transition: all ease 0.3s;
+  }
+  .navbar-toggler:hover, .navbar-toggler:active, .navbar-toggler:focus{
+    background-color:  rgb(134 195 5);
+    color: white;
+  }

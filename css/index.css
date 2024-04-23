@@ -65,8 +65,17 @@
   }
 
   .dropdown-menu .dropdown-item:hover {
-    /* background-color: #86C305; */
-    background-color: #446303;
+    background-color: #86C305;
+    /* background-color: #446303; */
     color: #fff; 
-    opacity: 0.7;
+    /* opacity: 0.7; */
   }    
+
+
+  .collapse ul li a:hover{
+    background-color: rgb(134 195 5);
+  }
+
+  #url-id:hover{
+    color: #86C305 !important;
+  }

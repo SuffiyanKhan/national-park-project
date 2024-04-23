@@ -10,19 +10,19 @@ document.querySelector("#navbar").innerHTML = `
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav fs-5 ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-light text-capitalize fw-semibold" href="./index.html">home</a>
+          <a class="nav-link btn btn text-light text-capitalize fw-semibold" href="./index.html">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-capitalize fw-semibold" href="./about.html">about</a>
+          <a class="nav-link btn btn text-light text-capitalize fw-semibold" href="./about.html">about</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-capitalize fw-semibold" href="./faq.html">FAQ</a>
+          <a class="nav-link btn btn text-light text-capitalize fw-semibold" href="./faq.html">FAQ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light text-capitalize fw-semibold" href="./contact.html">contact</a>
+          <a class="nav-link btn btn text-light text-capitalize fw-semibold" href="./contact.html">contact</a>
         </li>
         <li class="nav-item dropdown">
-        <a class="nav-link text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link btn btn text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           service
         </a>
         <ul class="dropdown-menu fs-5 py-3 px-2">
@@ -32,7 +32,7 @@ document.querySelector("#navbar").innerHTML = `
         </ul>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link btn btn text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           National parks
         </a>
         <ul class="dropdown-menu fs-5 py-3 px-2">

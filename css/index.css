@@ -43,7 +43,8 @@
 }
 
 .navbar-dark {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: #101701 !important;
+    /* background-color: rgba(0, 0, 0, 0.8) !important; */
     color: #ffffff !important;
 }
 
@@ -64,7 +65,8 @@
   }
 
   .dropdown-menu .dropdown-item:hover {
-    background-color: #86C305;
+    /* background-color: #86C305; */
+    background-color: #446303;
     color: #fff; 
     opacity: 0.7;
   }    

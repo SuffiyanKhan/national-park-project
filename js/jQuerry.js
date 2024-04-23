@@ -13,7 +13,7 @@ $(document).ready(function () {
       nextArrow: $('.slick-next'),
       responsive: [
         {
-          breakpoint: 1800, 
+          breakpoint: 2200, 
           settings: {
             slidesToShow: 8,
             slidesToScroll: 8,
@@ -46,6 +46,7 @@ $(document).ready(function () {
         }
       ]
     });
+    
     $('.slide').slick({
       autoplay: true,
       autoplaySpeed: 3000,

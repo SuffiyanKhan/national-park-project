@@ -62,3 +62,9 @@
     background-color:  rgb(134 195 5);
     color: white;
   }
+
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #86C305;
+    color: #fff; 
+    opacity: 0.7;
+  }    

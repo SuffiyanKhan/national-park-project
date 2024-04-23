@@ -424,8 +424,8 @@ input[type=number] {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 140px;
-    height: 46px;
+    /* max-width: 200px; */
+    /* height: 46px; */
     font-size: 24px;
     text-transform: capitalize;
     font-family: var(--heading-font);
@@ -440,7 +440,7 @@ input[type=number] {
 
 @media screen and (min-width: 992px) {
     .logo {
-        height: 64px;
+        /* height: 64px; */
         max-width: 160px;
     }
 }

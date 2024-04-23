@@ -2,13 +2,13 @@ document.querySelector("#navbar").innerHTML = `
 <nav class="navbar fixed-top navbar-expand-sm " >
   <div class="container-fluid">
     <a class="navbar-brand " href="#">
-      <img src="./Assets/logo.png" style="width: 90px;" class="img-fluid" alt="">
+      <img src="./Assets/logo.png" style="width: 100px;" class="img-fluid" alt="logo">
     </a>
     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class=" icon-color"><i class="fa-solid fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav fs-5 ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link text-light text-capitalize fw-semibold" href="./index.html">home</a>
         </li>
@@ -25,7 +25,7 @@ document.querySelector("#navbar").innerHTML = `
         <a class="nav-link text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           service
         </a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu fs-5 py-3 px-2">
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./services.html">service</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./servicesDetails.html">service details</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./members.html">membership</a></li>
@@ -33,9 +33,9 @@ document.querySelector("#navbar").innerHTML = `
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link text-light dropdown-toggle text-capitalize fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          other parks
+          National parks
         </a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu fs-5 py-3 px-2">
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./HillPark.html">Hill Park</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./NisarShaheedPark.html">Nisar Shaheed Park</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./ZamzamaPark.html">Zamzama Park</a></li>

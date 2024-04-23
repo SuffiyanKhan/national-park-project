@@ -8,8 +8,8 @@ document.querySelector("#footer").innerHTML = `
                   <div class="col-md-6">
                     <div class="text-center text-md-start d-grid gap-2">
                       <!-- Logo  -->
-                      <a href="index.html" class="logo mx-auto ms-md-0 ">
-                        <img src="./Assets/logo.png" alt="National Park" class="img-fluid logo__is">
+                      <a href="index.html" class="logo mx-auto ms-md-0">
+                        <img src="./Assets/logo-alt.png" alt="viserhyip" class="img-fluid logo__is">
                       </a>
                       <!-- Logo End -->
                       

@@ -59,7 +59,7 @@ document.querySelector("#footer").innerHTML = `
                       <ul class="list" style="--gap: 0.5rem">
                         <li>
                           <p class="mb-0 text--white t-short-para">
-                            support24/7.com
+                          suffiyanahmed804092@mail.com
                           </p>
                         </li>
                       </ul>
@@ -73,7 +73,7 @@ document.querySelector("#footer").innerHTML = `
                       <ul class="list" style="--gap: 0.5rem">
                         <li>
                           <p class="mb-0 text--white t-short-para">
-                            +123 - 456 - 789000
+                          +92 3336047999
                           </p>
                         </li>
                       </ul>

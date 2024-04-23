@@ -54,7 +54,7 @@ $(document).ready(function () {
       nextArrow: $('.slick-next'),
       responsive: [
           {
-              breakpoint: 1800,  
+              breakpoint: 2400,  
               settings: {
                   slidesToShow: 4,
                   slidesToScroll: 4,
@@ -63,7 +63,7 @@ $(document).ready(function () {
               }
           },
           {
-              breakpoint: 1600,  
+              breakpoint: 2200,  
               settings: {
                   slidesToShow: 3,
                   slidesToScroll: 3,

@@ -1,6 +1,6 @@
-.button.button--wapasha {
+/* background: rgb(134 195 5); */
+/* .button.button--wapasha {
 	background: #86C305;
-	/* background: rgb(134 195 5); */
 	color: #fff;
 
 	-webkit-transition: background-color 0.3s, color 0.3s;
@@ -29,7 +29,7 @@
 	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
 .button--wapasha.button--inverted::before {
-	border-color: white;
+	border-color: rgb(134 195 5);
 }
 .button--wapasha:hover {
 	background-color: #fff;
@@ -37,13 +37,23 @@
 	border: 2px solid rgb(134 195 5);
 }
 .button--wapasha.button--inverted:hover {
-	background-color: #37474f;
+	background-color: rgb(134 195 5);
 	color: white;
 }
 .button--wapasha:hover::before {
 	-webkit-transform: scale3d(1, 1, 1);
 	transform: scale3d(1, 1, 1);
 	opacity: 1;
+} */
+.button{
+	background-color: rgb(134 195 5) !important;
+	color: white !important;
+}
+.button:hover{
+	box-shadow: none !important;
+	background-color: white !important;
+	color: rgb(134 195 5) !important;
+	border: 0.0975rem solid rgb(134 195 5) !important;
 }
     .gallery-card{
       height: 500px;

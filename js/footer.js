@@ -41,16 +41,7 @@ document.querySelector("#footer").innerHTML = `
               <div class="col-md-6 col-lg-3">
                 <h4 class="info-section__title mt-0 text--white">Contact info</h4>
                 <ul class="list" style="--gap: .5rem;">
-                  <li>
-                    <div class="list list--row">
-                      <span class="info-section__icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                      </span>
-                      <p class="mb-0 text--white t-short-para">
-                        New York 10460 , Old city town
-                      </p>
-                    </div>
-                  </li>
+                  
                   <li>
                     <div class="list list--row">
                       <span class="info-section__icon">
@@ -59,7 +50,7 @@ document.querySelector("#footer").innerHTML = `
                       <ul class="list" style="--gap: 0.5rem">
                         <li>
                           <p class="mb-0 text--white t-short-para">
-                          suffiyanahmed804092@mail.com
+                          nationalpark@mail.com
                           </p>
                         </li>
                       </ul>
@@ -73,7 +64,7 @@ document.querySelector("#footer").innerHTML = `
                       <ul class="list" style="--gap: 0.5rem">
                         <li>
                           <p class="mb-0 text--white t-short-para">
-                          +92 3336047999
+                          +1 (555) 555-5555
                           </p>
                         </li>
                       </ul>
@@ -242,7 +233,7 @@ document.querySelector("#footer").innerHTML = `
         <div class="footer__copyright py-3">
           <p class="mb-0 sm-text text--white text-center">
             Copyright © 2022. All Rights Reserved By
-            <a href="#" class="t-link t-link--base text--base">Viserlife</a>
+            <a href="#" class="t-link t-link--base text--base">Nation Park</a>
           </p>
         </div>
       </footer>

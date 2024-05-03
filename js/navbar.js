@@ -31,6 +31,7 @@ document.querySelector("#navbar").innerHTML = `
           National parks
         </a>
         <ul class="dropdown-menu fs-6 py-3 px-2">
+          <li><a class="dropdown-item text-capitalize fw-semibold" href="./safariPark.html">Safari Park</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./HillPark.html">Hill Park</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./NisarShaheedPark.html">Nisar Shaheed Park</a></li>
           <li><a class="dropdown-item text-capitalize fw-semibold" href="./ZamzamaPark.html">Zamzama Park</a></li>

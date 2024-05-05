@@ -40,7 +40,7 @@ document.querySelector("#submit").addEventListener("click", () => {
         Swal.fire({
             title: "Good job!",
             text: "Success! Form submitted successfully.",
-            icon: "success"
+            icon: "success",
           });
         
     } else{

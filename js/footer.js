@@ -9,10 +9,9 @@ document.querySelector("#footer").innerHTML = `
                     <div class="text-center text-md-start d-grid gap-2">
                       <!-- Logo  -->
                       <a href="index.html" class="logo mx-auto ms-md-0">
-                        <img src="./Assets/logo-alt.png" alt="viserhyip" class="img-fluid logo__is">
+                        <img src="./Assets/logos/project_1-03-removebg-preview.png" alt="viserhyip" class="img-fluid p-0 m-0 logo__is">
                       </a>
                       <!-- Logo End -->
-                      
                     </div>
                   </div>
                   <div class="col-md-6">

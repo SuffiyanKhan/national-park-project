@@ -2,7 +2,7 @@ document.querySelector("#navbar").innerHTML = `
 <nav class="navbar fixed-top navbar-expand-sm " >
   <div class="container-fluid">
     <a class="navbar-brand " href="#">
-      <img src="./Assets/logo.png" style="width: 100px;" class="img-fluid" alt="logo">
+      <img src="./Assets/logos/project_1-04-removebg-preview (1).png" style="width: 240px;" class="img-fluid" alt="logo">
     </a>
     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class=" icon-color"><i class="fa-solid fa-bars"></i></span>

@@ -6,10 +6,10 @@ document.querySelector("#submit").addEventListener("click", () => {
     let success = document.querySelector(".success")
     let checkEmail = /^[a-zA-Z0-9_]{3,}@[a-zA-Z]{5,}\.[a-zA-Z]{2,}$/;
     let checkName = /^[a-zA-Z0-9]{5,}$/;
-    let checkSubject = /^.{20,}$/; 
-    let checkMsg = /^.{25,}$/; 
+    let checkSubject = /^.{20,}$/;
+    let checkMsg = /^.{25,}$/;
     let isValid = true;
-     
+
     if (!checkEmail.test(email)) {
         document.querySelector(".errorEmail").innerHTML = "Invalid email<br>";
         isValid = false;
@@ -41,15 +41,18 @@ document.querySelector("#submit").addEventListener("click", () => {
             title: "Good job!",
             text: "Success! Form submitted successfully.",
             icon: "success",
-          });
-        
-    } else{
+            confirmButtonColor: 'rgb(134 195 5)',
+            // confirmButtonColor: 'rgb(134 195 5)'
+        });
+
+    } else {
 
         Swal.fire({
             title: "Invalid Form!",
             text: "Invalid!",
-            icon: "error"
-          });
-        
+            icon: "error",
+            confirmButtonColor: 'rgb(134 195 5)',
+        });
+
     }
 });
